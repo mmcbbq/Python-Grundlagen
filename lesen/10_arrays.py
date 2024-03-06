@@ -8,7 +8,7 @@
 my_list = [50, 60, 50, 50, 40, 50]
 my_tuple = (50, 60, 50, 50, 40, 50)
 my_set = {50, 60, 50, 50, 40, 50}
-my_dic = {'ap1': 50, 'ap2_doku': 60, 'ap2_prasi': 50, 'ap2_1': 50, 'ap2_2': 40, 'ap2_wiso': 50}
+my_dic = {'ap1': 50, 'ap2_doku': 60, 'ap2_prasi': 50, 'ap2_1': 50, 'ap2_2': 40, 'ap2_wiso': 50, 'ap1': 80}
 # geordnet und duplicate
 print("--------geordnet un duplicate-------------")
 print(my_list)

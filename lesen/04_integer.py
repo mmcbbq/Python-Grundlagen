@@ -70,9 +70,7 @@ print(oct(dez))
 hexa = 0xfff
 print(hexa)
 print(hex(dez))
-a = "1"
-b = 1
-print(a is b)
+
 
 # and & , oder | , xor ^ , not ~
 x = 0b101010110011
@@ -99,8 +97,8 @@ print(bin(x))
 
 
 print('<<')
-a = 0b11
-a = a << 2
+a = 0b1100
+a = a >> 1
 print(bin(a))
 
 b = 0b1100

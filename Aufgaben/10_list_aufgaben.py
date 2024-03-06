@@ -25,6 +25,9 @@
 # Erstellen Sie eine Liste von 5 Städten, die Sie besuchen möchten.
 # Fügen Sie dann eine weitere Stadt hinzu und entfernen Sie die dritte Stadt aus der Liste.
 # Schließlich geben Sie die Liste der verbleibenden Städte aus.
-
-
+stadte = ['berlin', 'hamburg', 'london', 'amsterdam', 'la']
+stadte.append("oslo")
+print(stadte)
+stadte.pop(2)
+print(stadte)
 # Schreibe den IHK_Prüfung Programm um. Verwende anstatt Variablen für die Punkte ein Liste

@@ -1,10 +1,7 @@
 # Berechne die Summe aller Zahlen von 1 - 500
 print('Aufgabe 1')
 print('#######################')
-summe = 0
-for i in range(1, 501):
-	summe += i
-print(summe)
+
 # Schreib eine Schleife die folgendes Muster ausgibt
 # *
 # **
@@ -13,8 +10,7 @@ print(summe)
 # *****
 print('Aufgabe 2')
 print('#######################')
-for stern in range(5):
-	print('*' * (stern + 1))
+
 
 # Schreib eine Schleife die folgendes Muster ausgibt
 # *****
@@ -24,8 +20,7 @@ for stern in range(5):
 # *
 print('Aufgabe 3')
 print('#######################')
-for stern in range(5, 0, -1):
-	print('*' * stern)
+
 # Schreib eine Schleife, die folgendes Muster ausgibt
 # 1
 # 12
@@ -34,10 +29,7 @@ for stern in range(5, 0, -1):
 # 12345
 print('Aufgabe 4')
 print('#######################')
-for zeile in range(1, 6):
-	for zahl in range(1, zeile + 1):
-		print(zahl, end='')
-	print()
+
 # Schreib eine Schleife, die folgendes Muster ausgibt
 # 5
 # 45
@@ -46,10 +38,7 @@ for zeile in range(1, 6):
 # 12345
 print('Aufgabe 5')
 print('#######################')
-for zeile in range(5, 0, -1):
-	for stelle in range(zeile, 6):
-		print(stelle, end='')
-	print()
+
 # Schreib eine Schleife, die folgendes Muster ausgibt
 # 12345
 # 1234
@@ -132,15 +121,11 @@ print('#######################')
 print('Aufgabe 8')
 print('#######################')
 
+
+
 print('Aufgabe 9')
 print('#######################')
-for zeile in range(8):
-	for spalte in range(8):
-		if (spalte + zeile) % 2 == 0:
-			print('X', end='')
-		else:
-			print('O', end='')
-	print()
+
 # Schreib eine Schleife, die folgendes Muster ausgibt
 # OXOXOXOX
 # XOXOXOXO

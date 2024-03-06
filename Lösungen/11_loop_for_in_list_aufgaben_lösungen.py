@@ -167,7 +167,7 @@ print('############################################')
 print('############################################')
 print('############################################')
 
-print('Der Mittelwert ist :',gesamt)
+print('Der Mittelwert ist :', gesamt)
 if vormittag > nachmittag:
 	print('Vormittag:', vormittag)
 	print('Nachmittag:', nachmittag)
@@ -191,5 +191,5 @@ for reihe in muster:
 		# if zahl*reihe < 10:
 		# 	print(' ' + str(zahl * reihe), end=' ')
 		# else:
-		print(zahl*reihe, end='\t')
-	print('') # neue Zeile
+		print(zahl * reihe, end='\t')
+	print('')  # neue Zeile

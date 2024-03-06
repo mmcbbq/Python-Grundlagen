@@ -31,12 +31,12 @@ for x in range(101):
 print(z)
 
 summe = 0
-for x in range(1,1000):
+for x in range(1, 1000):
 	summe += x
 print(summe)
 
 körner = 1
-for feld in range(1,65):
+for feld in range(1, 65):
 	körner = körner * 2
 print(körner)
-print(2**64)
+print(2 ** 64)

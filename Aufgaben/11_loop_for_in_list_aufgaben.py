@@ -121,23 +121,10 @@ mem_mom = [33, 44, 40, 52, 60, 56, 40, 52, 60, 56]
 
 # Berechne den Mittelwert der letzten 5 "Nachmittag"
 
-
 # Gib die Mittel werte in der Konsole aus
 # 1. Der gesamte Mittelwert
-# 2. Der größere Mittelwert. Wenn Vormittag und Nachmittag gleich sind dann zuesr Vormittag
+# 2. Der größere Mittelwert. Wenn Vormittag und Nachmittag gleich sind dann zuerst Vormittag
 # Beispiel
 # Gesamt 49
 # Nachmittag 51
 # Vormittag 48
-
-
-# --------------------------------
-muster = [1, 2, 3, 4, 5]
-# gib mithilfe der Liste muster das Muster aus
-
-
-# 1   2   3   4   5
-# 2   4   6   8  10
-# 3   6   9  12  15
-# 4   8  12  16  20
-# 5  10  15  20  25

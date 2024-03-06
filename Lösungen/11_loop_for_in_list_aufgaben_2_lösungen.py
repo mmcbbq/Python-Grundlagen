@@ -19,5 +19,53 @@ for zahl in numbers:
 
 
 
+tim = ["k", 'e', '', "", 'on', 'on', 'on', 'on', 'on', '', "", 'PR', 'x', 'n', 'on', 'x', '', "", 'FE', 'x', 'x', 'x',
+	   'x', '', "", 'x', 'on', 'k', 'e', 'x']
+
+# In der liste Tim sollen alle Werte gezaehlt werden
+# Ausgabe
+# k = 5
+# x =10
+# on = 6
+# e = 8
+# '' = 4
+# PR = 5
+# FE = 3
+# fehleingabe = [onn, xx, PJ]
+
+
+
+students = ['Ali', 'Mehmet', 'Ali', 'Philipp', 'Sven', 'Alexander', 'Matrix', 'Mohamad', 'Peter', 'Alexander', 'Sascha',
+			'Darius', 'Elsa', 'Coskun', 'Grigorius', 'Kaycee', 'Carsten', 'Bader', 'Athanasios']
+# Zaehle alle "a" in den Namen (case-insensitive)
+
+# Zaehle alle "m" in den Namen
+
+# Erstelle 2 Listen buchstaben und anzahl
+# in der Liste buchstaben sollen alle Buchstaben, die in den Namen vorkommen rein
+# und in der Liste anzahl wie oft sie vorkommen (case-insensitive)
+# Die Buchstaben und die Anzahl mueseen denselben index haben
+buchstaben = []
+anzahl = []
+count = ""
+for name in students:
+	z = 0
+	print(f"count {name}")
+	for buch in name:
+		if buch.upper() in buchstaben:
+			continue
+		else:
+			print(f"{buch} nicht in liste")
+			z = 0
+			for name_check in students:
+				for b_add in name_check:
+					if b_add.upper() == buch.upper():
+						z += 1
+			buchstaben.append(buch.upper())
+			anzahl.append(z)
+print(len(buchstaben), )
+print(len(anzahl))
+print(dict(zip(buchstaben, anzahl)))
+
 
 

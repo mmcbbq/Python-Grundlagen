@@ -30,6 +30,7 @@ print('Float:',type(zahl), zahl)
 zahl = str(zahl)
 print('String: ',type(zahl),zahl)
 
-#zahl2 = "one"
-#zahl2 = int(zahl2) error
+zahl = -10.9
+zahl = int(zahl)
+print(zahl)
 

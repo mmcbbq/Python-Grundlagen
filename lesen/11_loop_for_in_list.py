@@ -11,11 +11,15 @@ for vorname in students:
 	if len(vorname) == 5:
 		print('Hallo', vorname)
 
+
+
 z = 0
 for vorname in students:
 	if len(vorname) == 5:
 		z += 1
 print(z)
+
+print(list(enumerate(students)))
 
 zahlen = [12, 10, 8, 4, 15, 18, 2, 8, 11]
 summe = 0

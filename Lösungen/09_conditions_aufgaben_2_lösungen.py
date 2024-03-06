@@ -58,15 +58,15 @@ else:
 # beträgt der Rabatt 15 %, in allen anderen Fällen beträgt der Rabatt 20 %. Nach Eingabe des Bestellwertes soll
 # der ermäßigte Bestellwert berechnet und ausgegeben werden.
 
-# bestellwert = float(input('Bestellwert?'))
-# if 0 < bestellwert <= 100:
-# 	print(bestellwert * 0.9)
-# elif 100 < bestellwert < 500:
-# 	print(bestellwert * 0.85)
-# elif bestellwert >= 500:
-# 	print(bestellwert * 0.8)
-# else:
-# 	print('Falsche Eingabe')
+bestellwert = float(input('Bestellwert?'))
+if 0 < bestellwert <= 100:
+	print(bestellwert * 0.9)
+elif 100 < bestellwert < 500:
+	print(bestellwert * 0.85)
+elif bestellwert >= 500:
+	print(bestellwert * 0.8)
+else:
+	print('Falsche Eingabe')
 
 # Der BMI berechnet sich aus dem Körpergewicht [kg] dividiert durch das Quadrat der Körpergröße [m2
 # Die Formel lautet: BMI = (Körpergewicht in kg)\ (Körpergröße in m)**2

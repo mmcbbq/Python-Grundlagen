@@ -1,6 +1,6 @@
 my_list = [50, 50.55, 'string', True]
 print(type(my_list))  # -> <class 'list'>
-# Anzahl der itmes in der Liste
+# Anzahl der items in der Liste
 
 print(len(my_list))  # -> 4
 print(my_list.count('string'))  # -> zählt die Anzahl der Elemente

@@ -2,7 +2,7 @@
 # Strings werden mit ' oder " umschlossen
 my_string = "Hello"
 my_string2 = 'Hello'
-# Einen mehr Zeiligen String kann man mit ''' oder """ erstellen
+# Einen mehr Zeiliger String kann man mit ''' oder """ erstellen
 
 long_string = """Hallo
 ich

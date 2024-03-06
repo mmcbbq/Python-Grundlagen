@@ -22,7 +22,7 @@ test_nummer = "test"  # sollte man machen
 print(test)
 
 # Vor dem Aufrufen müssen Variablen definiert werden
-print(aufruf) # erzeugt einen error
+#print(aufruf) # erzeugt einen error
 aufruf = "falsch"
 # Man kann beliebig viele Variablen erstellen
 name1 = "Bob"

@@ -7,8 +7,6 @@
 # falsche Auswahl getroffen wurde.
 
 
-
-
 # Nach dem Ohmschen Gesetz berechnet sich der Widerstand eines ohmschen Widerstandes mit:
 # U = R * I
 # R = U/I
@@ -20,17 +18,10 @@
 # gesuchten Größe mit der richtigen Einheit aus
 
 
-
-
-
-
-
-
 # Ein Hardware-Großhändler führt ein Rabattsystem für Stammkunden ein: Liegt der Bestellwert zwischen 0 und
 # 100 €, erhält der Kunde einen Rabatt von 10 %. Liegt der Bestellwert höher, aber insgesamt nicht über 500 €,
 # beträgt der Rabatt 15 %, in allen anderen Fällen beträgt der Rabatt 20 %. Nach Eingabe des Bestellwertes soll
 # der ermäßigte Bestellwert berechnet und ausgegeben werden.
-
 
 
 # Der BMI berechnet sich aus dem Körpergewicht [kg] dividiert durch das Quadrat der Körpergröße [m2
@@ -55,15 +46,16 @@
 #
 #
 # Bedingung 1:
-# Ist eine Jahreszahl ganzzahlig durch 4 teilbar, dann ist das Jahr ein Schaltjahr. Testwerte: 1720, 1972 und 1980 waren Schaltjahre.
+# Ist eine Jahreszahl ganzzahlig durch 4 teilbar, dann ist das Jahr ein Schaltjahr. Testwerte: 1720, 1972
+# und 1980 waren Schaltjahre.
 # Bedingung 2:
-# Ausnahme zu den Jahreszahlen, die der Bedingung 1 genügen, sind alle Jahreszahlen, die nach Bedingung 1 ein Schaltjahr sind, aber deren Jahreszahl ganzzahlig durch 100 teilbar ist.
+# Ausnahme zu den Jahreszahlen, die der Bedingung 1 genügen, sind alle Jahreszahlen, die nach Bedingung 1
+# ein Schaltjahr sind, aber deren Jahreszahl ganzzahlig durch 100 teilbar ist.
 # Testwerte: 1700, 1800 und 1900 oder ferner 2100 sind keine Schaltjahre.
 # Bedingung 3:
-# Ausnahme zu den Jahreszahlen, die der Bedingung 2 genügen, sind alle Jahreszahlen, die nach Bedingung 2 kein Schaltjahr sind, aber deren Jahreszahl ganzzahlig durch 400 teilbar.
+# Ausnahme zu den Jahreszahlen, die der Bedingung 2 genügen, sind alle Jahreszahlen, die nach Bedingung 2
+# kein Schaltjahr sind, aber deren Jahreszahl ganzzahlig durch 400 teilbar.
 # Testwerte: 1600 und 2000 waren Schaltjahre.
-#1980 2100 1200
-
 
 
 

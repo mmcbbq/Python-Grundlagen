@@ -1,34 +1,24 @@
 user = ['Bob', 'Eve', 'Jim', 'John', 'Tim']
 # printe für alle Namen der Liste user "createuser username"
 # Beispiel "createuser Bob"
-for name in user:
-    print(f'createuser {name}')
+
 
 # Wandele die Username in lowercase um bevor du sie ausdruckst
 # Beispiel "createuser bob"
-for name in user:
-    print(f'createuser {name.lower()}')
+
 
 # Erweitere die Ausgabe um einen Zähler
 # Beispiel "createuser Bob 1"
 # Beispiel "createuser Eve 2"
 
 
-for index, name in enumerate(user, 1):
-    print(f'createuser {name} {index}')
+
 
 # Es sollen nur noch User ausgegeben werden die ein "i"" in ihrem namen haben.
-for name in user:
-    if 'i' in name:
-        print(name)
 
-for name in user:
-    for letter in name:
-        if letter == "i":
-            print(name)
+
+
 # Tausche in jedem Namen den Buchstaben "B" gegen ein '8', 'E' gegen ein '3' 'o' gegen 0 und 'i' gegen '1' aus.
-for name in user:
-    print(name.replace('B', '8').replace('E', '3').replace('o', '0').replace('i', '1'))
 
 # Es soll folgende Ausgabe mit einer Schleife erzeugt werden
 # Tip "\t"
@@ -38,8 +28,7 @@ for name in user:
 # 		 Jim
 # 			 John
 # 				 Tim
-for z, name in enumerate(user):
-    print("\t" * z, name)
+
 
 rand_zahlen = [452, 30, 688, 177, 534, 137, 490, 387, 845, 882, 896, 798, 456, 691, 932, 978, 333, 499, 222, 775, 866,
                976, 809, 803, 970, 840, 2, 814, 638, 189, 255, 960, 199, 350, 365, 104, 396, 794, 489, 497, 380, 598,
@@ -54,60 +43,31 @@ rand_zahlen = [452, 30, 688, 177, 534, 137, 490, 387, 845, 882, 896, 798, 456, 6
                518, 143, 528, 106, 806, 230, 82, 548, 476, 736]
 
 # Elemente addieren: Gehe durch die Liste rand_zahlen und addiere alle Elemente [Summe]
-print(sum(rand_zahlen))
-summe = 0
-for zahl in rand_zahlen:
-    summe += zahl
-print(summe)
+
 
 # Gib die Anzahl der Elemente aus ohne len oder andere eingebaute Funktionen
-print(len(rand_zahlen))
-i = 0
-for zahl in rand_zahlen:
-    i += 1
-print(i)
+
 
 # Größtes Element finden: Finde das größte Element in einer Liste von Zahlen.
-g = rand_zahlen[0]
-for zahl in rand_zahlen:
-    if zahl > g:
-        g = zahl
-print(g)
-print(max(rand_zahlen))
+
+
 # Ausgabe aller Elemente *2
-for zahl in rand_zahlen:
-    print(zahl * 2)
+
 
 # Nur Gerade Zahlen Ausgeben
-for i in rand_zahlen:
-    if i % 2 == 0:
-        print(i)
+
 
 # Gebe nur Zahlen aus die zwischen 150 und 300 sind.
 print('________________________________________________')
-for i in rand_zahlen:
-    if 150 < i < 300:
-        print(i)
-# Füge alle Zahlen die kleiner als 100 sind in eine Liste kleiner100 hinzu.
-kleiner = []
-for i in rand_zahlen:
-    if i < 100:
-        kleiner.append(i)
 
-print(kleiner)
+# Füge alle Zahlen die kleiner als 100 sind in eine Liste kleiner100 hinzu.
+
 
 # Sortiere alle Zahlen aus der rand_zahlen in eine nested_list
 # nested_list = [[Zahlen 0-300],[Zahlen 301 - 600], [Zahlen 601-999]]
-nested_list = [[], [], []]
-for i in rand_zahlen:
-    if 0 <= i <= 300:
-        nested_list[0].append(i)
-    elif 301 <= i <= 600:
-        nested_list[1].append(i)
-    elif 601 <= i <= 999:
-        nested_list[2].append(i)
 
-print(nested_list)
+
+
 
 mem_mom = [33, 44, 40, 52, 60, 56, 40, 52, 60, 56]
 

@@ -5,7 +5,6 @@ print(type(my_list))  # -> <class 'list'>
 print(len(my_list))  # -> 4
 print(my_list.count('string'))  # -> zählt die Anzahl der Elemente
 
-
 # leere Liste
 leere_liste = []
 
@@ -63,7 +62,7 @@ my_list = [50, 50.55, 'string', True]
 del my_list[0]  # -> entfernt das Element mit dem Index 0
 
 print(my_list)
-# del my_list -> löscht die gesamte Liste
+# del my_list #-> #löscht die gesamte Liste
 print(my_list)
 my_list.clear()  # -> löscht den Inhalt der Liste
 print(my_list)
@@ -82,8 +81,6 @@ print(51 in my_list)
 
 my_list = [50, 50.55, 'string', True]
 
-
-
 my_list_copy = my_list
 print(my_list)
 print(my_list_copy, 'copy')
@@ -92,11 +89,6 @@ print(my_list)
 print(my_list_copy, 'copy')
 print('#########################')
 my_list = [50, 50.55, 'string', True]
-
-
-
-
-
 
 my_list_copy = my_list.copy()
 my_list.pop()

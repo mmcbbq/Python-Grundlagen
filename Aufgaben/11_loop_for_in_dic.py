@@ -1,5 +1,4 @@
 #
-# Natürlich, hier sind 20 Aufgaben, die sich auf die Verwendung von Dictionaries in Kombination mit Schleifen in Python konzentrieren:
 #
 # Gegeben ist das folgende Dictionary my_dict: {'A': 1, 'B': 2, 'C': 3}. Schreibe eine Schleife, die jeden Schlüssel-Wert-Paar in my_dict ausgibt.
 # Schreibe eine Schleife, die alle Schlüssel in my_dict ausgibt.

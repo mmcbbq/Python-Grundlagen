@@ -8,7 +8,7 @@ falsch = False
 print("==")
 print('----------------------------------------')
 print(15 == 15)  # True
-print(15 == 20)  # Fasle
+print(15 == 20)  # False
 print(15 == 15.)  # True
 print(15 == "15")  # False
 print('15' == '15')  # True

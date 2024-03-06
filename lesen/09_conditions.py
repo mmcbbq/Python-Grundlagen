@@ -20,7 +20,9 @@ if alter >= 18:
 		print('Hallo Herr', end=' ')
 	elif geschlecht == 'w':
 		print('Hallo Frau', end=' ')
-	print('du bist gefeuert')
+		print('du bist gefeuert')
+	else:
+		print("Falsche Eingabe")
 else:
 	print('du bist nicht')
 
@@ -44,6 +46,9 @@ elif zahl2 > zahl1 and zahl2 > zahl3:
 	print("zahl2")
 elif zahl3 > zahl1 and zahl3 > zahl2:
 	print("zahl3")
+
+
+
 # empty String
 print('empty String')
 if '':

@@ -16,7 +16,10 @@
 # Schreibe eine Schleife, die den Gesamtwert aller Früchte im inventory berechnet.
 # Gegeben ist das folgende Dictionary sales: {'Apfel': 100, 'Banane': 150, 'Orange': 200}. Schreibe eine Schleife, die den Gesamtwert aller verkauften Früchte basierend auf den Verkaufszahlen in sales und den Preisen in inventory berechnet.
 # Schreibe eine Schleife, die die Früchte ausgibt, die sowohl im inventory als auch in sales enthalten sind.
-# Schreibe eine Schleife, die das Verhältnis von Verkaufszahlen zu Bestand für jede Frucht in inventory und sales berechnet und ausgibt.
+# Schreibe eine Schleife, den bestand in Prozent ausgibt
+verkauft = {'Apfel': 10, 'Banane': 5, 'Orange': 8, "Traube" : 200}
+bestand = {'Apfel': 100, 'Banane': 150, 'Orange': 200, "Traube" : 400}
+
 # Gegeben sind die folgenden Dictionaries: dict1 = {'a': 1, 'b': 2, 'c': 3} und dict2 = {'b': 3, 'c': 4, 'd': 5}. Schreibe eine Schleife, die die gemeinsamen Schlüssel von dict1 und dict2 ausgibt.
 # Schreibe eine Schleife, die ein neues Dictionary erstellt, das die Summe der Werte für jeden gemeinsamen Schlüssel in dict1 und dict2 enthält.
 # Schreibe eine Schleife, die ein neues Dictionary erstellt, das die absoluten Differenzen der Werte für jeden gemeinsamen Schlüssel in dict1 und dict2 enthält.

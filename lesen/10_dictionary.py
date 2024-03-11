@@ -17,7 +17,7 @@ print("Auswahl")
 print(my_dic['string'])
 print(my_dic.get("string"))
 print(my_dic["bool"])
-# Sliceing import itertools
+# Slicing import itertools
 
 # Die keys() methode gibt eine liste alles keys
 print("keys")
@@ -96,6 +96,7 @@ print('copy')
 print(my_dic2)
 
 print('-------------copy------------------------------------')
+my_dic = {"string": "wert", "int": 50, "float": 10.2, "bool": True}
 
 
 my_dic2 = my_dic.copy()
@@ -112,3 +113,6 @@ print('my_dic')
 print(my_dic)
 print('copy')
 print(my_dic2)
+
+
+

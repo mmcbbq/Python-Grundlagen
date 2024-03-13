@@ -1,7 +1,7 @@
 # Zahlen addieren:
 # Schreibe eine While-Schleife,
 # die die Summe von Zahlen von 1 bis zu einer vom Benutzer
-# eingegebenen Zahl berechnet.
+# eingegebener Zahl berechnet.
 
 
 # Passwort überprüfen:

@@ -209,24 +209,35 @@ print(div(y=3, x=15))
 def my_func_pkd(x, y, z=100):
 	return x + y + z
 
-print(my_func_pkd(100, z=120, y=50 ))
+
+print(my_func_pkd(100, z=120, y=50))
+
 
 # New feature since Python 3.8
 # positional arguments before /: a und b
 # optional arguments zwischen / * c und d
 # keyword arguments nur nach dem * e
 
-def boo(a, b, /, c, d, *, e= 100):
+def boo(a, b, /, c, d, *, e=100):
 	return None
 
 
-boo(1,2,c=4, d=5)
+boo(1, 2, c=4, d=5)
 
-boo(1,2,3,4, e=10)
+boo(1, 2, 3, 4, e=10)
+
+
 # boo(1,2,3,4, 5) -> boo() takes 4 positional arguments but 5 were given
 
 
+# Wenn man eine vorher unbestimmte Zahl von Parametern uebergeben will, kann man dies mit *param
+# Diese Parameter werden in ein tuple gepackt
+def keineplan(*viele_oder_eins, key) -> str:
+	print(type(viele_oder_eins))
+	print(viele_oder_eins)
+	print(key)
+	return "test"
 
 
-
-
+keineplan(1, 2, 3, 4, "test", 9, key=12)
+ym_var: str = "1"

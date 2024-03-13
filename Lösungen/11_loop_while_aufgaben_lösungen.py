@@ -40,7 +40,7 @@ print('Du bist drin')
 # Das Programm soll jeweils die Meldungen „Die Zahl ist zu groß“,
 # „Die Zahl ist zu klein“ bzw.
 # „Treffer“ ausgeben.
-# Wenn die Zahl zu Gross oder zu klein ist soll die Frage erneut gestellt werden
+# Wenn die Zahl zu Gross oder zu klein ist, soll die Frage erneut gestellt werden
 
 import random
 zufall_zahl = random.randint(1, 100)

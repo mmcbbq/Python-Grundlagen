@@ -6,6 +6,7 @@ print('Hallo mein name ist %s und ich bin %s <- sehr alt' % (name, alter))
 
 print('Hallo mein name ist {} und ich bin {} <- alt'.format(name, alter))
 # Modern ist die F.Sting Methode
+# https://docs.python.org/3/library/string.html#format-specification-mini-language
 # https://mkaz.blog/working-with-python/string-formatting/
 print(f"Hallo mein Name ist {name} und ich bin {alter}")
 

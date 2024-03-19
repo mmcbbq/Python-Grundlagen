@@ -85,7 +85,8 @@ sag_hallo_mit_namen('Bob')  # Das Argument 'Bob' wird bei dem Funktionsaufruf de
 # sag_hallo_mit_namen() -> sag_hallo_mit_namen() missing 1 required positional argument: 'name'
 
 # man kann Beliebig viele Parameter festlegen
-def my_sum(a, b):
+def my_sum(a: str, b: int) -> None:
+	"""super summer"""
 	print(a + b)
 
 
@@ -138,16 +139,16 @@ def bigger(zahl1, zahl2):
 		return print('sind gleich')
 
 
-zahl1 = 5
-zahl2 = 3
-print(bigger(zahl1, zahl2))
+z1 = 5
+z2 = 3
+print(bigger(z1, z2))
 
 
 def mal_5(a):
 	return a * 5
 
 
-print(bigger(mal_5(zahl1), zahl2))
+print(bigger(mal_5(z1), z2))
 
 
 # Wenn eine Funktion keine return value definiert gibt sie None zurück
@@ -158,11 +159,6 @@ def no_return():
 
 
 print(no_return())  # -> None
-
-# Variablen die man in einer Funktion definiert stehen einem nur in der Funktion zur verfügung
-# Scope einer Variable local oder global
-# print(test) -> NameError: name 'test' is not defined
-print('##############################')
 
 
 def check_list(liste):
@@ -219,10 +215,13 @@ print(my_func_pkd(100, z=120, y=50))
 # keyword arguments nur nach dem * e
 
 def boo(a, b, /, c, d, *, e=100):
-	return None
+	print(f"a:{a}")
+	print(f"b:{b}")
+	print(f"c:{c}")
+	print(f"e:{e}")
 
 
-boo(1, 2, c=4, d=5)
+boo(1, 2, c=3, d=5)
 
 boo(1, 2, 3, 4, e=10)
 
@@ -240,4 +239,3 @@ def keineplan(*viele_oder_eins, key) -> str:
 
 
 keineplan(1, 2, 3, 4, "test", 9, key=12)
-ym_var: str = "1"

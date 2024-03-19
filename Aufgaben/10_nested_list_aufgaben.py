@@ -27,7 +27,7 @@ tic = []
 # 1['o', 'o', 'o']
 # 2['x', 'x', 'o']
 # 3['o', 'x', 'o']
-#    1    2    3
+#    a    b    c
 # Beispiel Zahl1 = 3 Zahl2 = 2 Buchstabe = p
 # 1['o', 'o', 'o']
 # 2['x', 'x', 'p']
@@ -37,7 +37,8 @@ tic = []
 
 #Schreib eine If anweisung die 'Sieg' ausgibt wenn das Zeiche auf pos 1.1 das selbe ist wie auf pos 2.2 und 3.3
 
+eingabe= input("Feld?") -> a:8
+tic[eingabe[0][eingabe[-1]]]
 
-
-
-
+import random
+random.randint(0,2)

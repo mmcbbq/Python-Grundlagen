@@ -57,14 +57,12 @@ print(min_max_liste(zahlen))
 # Schreibe die Funktionen zur Überprüfung der Sieg bedingungen des Tic Tac Toe spiels.
 # Sie sollen True zurückgeben bei einem Sieg und False wenn sie nicht erfüllt werden
 # waagerechter Sieg
-spielfeld = [[True, True, True], [True, True, True], [True, True, True]]
+spielfeld = [['-', '-', '-'], ['-', '-', '-'], ['-', '-', '-']]
 
 
 def sieg_waage(nested_list):
 	for liste in nested_list:
-		if type(liste[0]) is bool:
-			continue
-		elif liste[0] == liste[1] and liste[0] == liste[2]:
+		if liste[0] == liste[1] and liste[0] == liste[2] and liste[0] != '-':
 			return True
 	return False
 
@@ -79,9 +77,7 @@ spielfeld = [['x', True, 'x'], [True, True, 'x'], [True, True, 'x']]
 # senkrechter Sieg
 def sieg_senk(nested_list):
 	for x in range(3):
-		if type(nested_list[0][x]) is bool:
-			continue
-		elif nested_list[0][x] == nested_list[1][x] == nested_list[2][x]:
+		if nested_list[0][x] == nested_list[1][x] == nested_list[2][x] != '-':
 			return True
 	return False
 
@@ -89,34 +85,25 @@ def sieg_senk(nested_list):
 
 
 
-# [x, x, o]
-# [-, o, o]
-# [o, -, o]
-
-# diagonaler Sieg oben links nach unten Rechts
-# [o, x, x]
-# [-, o, o]
-# [o, -, o]
 
 
 def sieg_diag_ol_ur(nested_list):
-	if nested_list[0][0] == nested_list[1][1] == nested_list[2][2] and type(nested_list[0][0]) is not bool:
+	if nested_list[0][0] == nested_list[1][1] == nested_list[2][2] and nested_list[0][2] != "-":
 		return True
 	else:
 		return False
 
-# diagonaler Sieg unten links nach oben Rechts
-# [x, x, o]
-# [-, o, o]
-# [o, -, o]
+
 def sieg_diag_or_ul(nested_list):
-	if nested_list[0][2] == nested_list[1][1] == nested_list[2][0] and type(nested_list[0][2]) is not bool:
+	if nested_list[0][2] == nested_list[1][1] == nested_list[2][0] and nested_list[0][2] != "-":
 		return True
 	else:
 		return False
 
 
-spielfeld = [[True, True, 'o'], [True, 'o', True], ['o', True, True]]
+spielfeld = [['o', '-', 'o'], ['o', '', '-'], ['o', 'o', 'o']]
+for x in spielfeld:
+	print(x)
 print(sieg_waage(spielfeld))
 print(sieg_senk(spielfeld))
 print(sieg_diag_ol_ur(spielfeld))
@@ -134,15 +121,15 @@ print(sieg_diag_or_ul(spielfeld))
 # 			return False
 # 	return True
 pal = 'Erika feuert nur untreue Fakire'.replace(' ','')
-def palindrom(string):
-	re_string = string[::-1]
-	print(re_string)
-	# for x in string:
-	# 	re_string = x + re_string
-	if re_string.upper() == string.upper():
-		return True
-	else:
-		return False
-print('###################################################')
-print(palindrom(pal))
+# def palindrom(string):
+# 	re_string = string[::-1]
+# 	print(re_string)
+# 	# for x in string:
+# 	# 	re_string = x + re_string
+# 	if re_string.upper() == string.upper():
+# 		return True
+# 	else:
+# 		return False
+# print('###################################################')
+# print(palindrom(pal))
 

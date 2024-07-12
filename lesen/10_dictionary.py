@@ -19,7 +19,7 @@ print(my_dic.get("string"))
 print(my_dic["bool"])
 # Slicing import itertools
 
-# Die keys() methode gibt eine liste alles keys
+# Die keys() methode gibt eine liste aller keys
 print("keys")
 print(my_dic.keys())
 # Die values() methode gibt eine liste alles werte
@@ -48,7 +48,6 @@ my_dic.update({"string_update": "update"})
 print(my_dic)
 
 # remove mit pop(key)
-
 my_dic.pop('string_neu')
 print('remove string_neu pair mit pop()')
 print(my_dic)

@@ -23,8 +23,9 @@ list_copy = super_liste.copy()
 # Leere die Originalliste
 super_liste.clear()
 # Füge die letzten 3 Elemente der list_copy an die super_liste an.
-super_liste.extend(list_copy[-3:0])
-
+super_liste.extend(list_copy[-3:])
+print(list_copy)
+print(super_liste)
 # Erstellen Sie eine Liste von 5 Städten, die Sie besuchen möchten.
 # Fügen Sie dann eine weitere Stadt hinzu und entfernen Sie die dritte Stadt aus der Liste.
 # Schließlich geben Sie die Liste der verbleibenden Städte aus.

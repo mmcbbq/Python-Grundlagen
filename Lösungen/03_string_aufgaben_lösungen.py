@@ -27,7 +27,7 @@ print(name)
 # Ändere mithilfe der upper Methode den Anfangsbuchstaben des Vor- und Nachnamens
 name = name[0].upper()+name[1:4]+name[4].upper()+name[5:]
 print(name)
-# Printe den Nachnahmen mit Slicen der name Variable
+# Printe den Nachnahmen mit Slicen aus der Variable name
 print(name[4:])
 # Erstelle eine Variable name_9999, in der dein Name 9999-mal gespeichert ist
 name_9999 = (name+" ") * 9999

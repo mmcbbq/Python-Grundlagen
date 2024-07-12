@@ -40,4 +40,4 @@ print('----------------------------------------')
 # Bei float auf rundungsfehler achten!!!!
 print(15.2 - 11)
 # Besser mal 10 ** x nehmen, um mit int zu arbeiten
-print(((15.2 * 10) - (10 * 10)) / 10)
+print(((15.2 * 10) - (11 * 10)) / 10)

@@ -1,3 +1,8 @@
+# Erstellen Sie eine Liste von 5 Städten, die Sie besuchen möchten.
+# Fügen Sie dann eine weitere Stadt hinzu und entfernen Sie die dritte Stadt aus der Liste.
+# Schließlich geben Sie die Liste der verbleibenden Städte aus.
+
+
 # Erstelle eine Liste super_liste mit folgenden Items: 20, 50.5, 'Hallo', True, 'Löschen', 'auf Wiedersehen'
 
 # Ändere den Wert des ersten Elementes zu 95
@@ -22,12 +27,4 @@
 # Füge die letzten 3 Elemente der list_copy an die super_liste an.
 
 
-# Erstellen Sie eine Liste von 5 Städten, die Sie besuchen möchten.
-# Fügen Sie dann eine weitere Stadt hinzu und entfernen Sie die dritte Stadt aus der Liste.
-# Schließlich geben Sie die Liste der verbleibenden Städte aus.
-stadte = ['berlin', 'hamburg', 'london', 'amsterdam', 'la']
-stadte.append("oslo")
-print(stadte)
-stadte.pop(2)
-print(stadte)
-# Schreibe den IHK_Prüfung Programm um. Verwende anstatt Variablen für die Punkte ein Liste
+

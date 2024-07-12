@@ -11,19 +11,19 @@ zahl2 = int(input("Zahl 2"))
 # #
 if operator == "+":
 	solution = zahl1 + zahl2
-	print(solution)
+
 elif operator == "-":
 	solution = zahl1 - zahl2
-	print(solution)
+
 elif operator == "*":
 	solution = zahl1 * zahl2
-	print(solution)
+
 elif operator == "/":
 	if zahl2 == 0:
-		print("Das kann nur Chuck Norris")
+		solution = "Das kann nur Chuck Norris"
 	else:
 		solution = zahl1 / zahl2
-		print(solution)
+print(solution)
 # exec("print(5 + 3)")
 
 
@@ -86,16 +86,6 @@ grosse = float(input('Größe in cm'))
 geschlecht = input('Geschlecht m w')
 bmi = gewicht / (grosse / 100) ** 2
 
-if bmi >= 40:
-	print("massive Adipositas")
-elif bmi >= 30 and bmi < 40:
-	print('Adipositas')
-elif geschlecht == "w" and bmi < 30 and bmi >= 24 or geschlecht == "m" and bmi < 30 and bmi >= 25:
-	print('Übergewicht')
-elif geschlecht == "w" and bmi < 24 and bmi >= 19 or geschlecht == "m" and bmi < 25 and bmi >= 20:
-	print('Normalgewicht')
-elif geschlecht == "w" and bmi < 19 or geschlecht == "m" and bmi < 20:
-	print('Untergewicht')
 
 
 
@@ -118,7 +108,26 @@ elif geschlecht == "m":
 	elif 25 <= bmi < 30:
 		print('Übergewicht')
 
-print(round(bmi, 2))
+
+
+
+
+
+
+
+
+if bmi >= 40:
+	print("massive Adipositas")
+elif bmi >= 30 and bmi < 40:
+	print('Adipositas')
+elif geschlecht == "w" and bmi < 30 and bmi >= 24 or geschlecht == "m" and bmi < 30 and bmi >= 25:
+	print('Übergewicht')
+elif geschlecht == "w" and bmi < 24 and bmi >= 19 or geschlecht == "m" and bmi < 25 and bmi >= 20:
+	print('Normalgewicht')
+elif geschlecht == "w" and bmi < 19 or geschlecht == "m" and bmi < 20:
+	print('Untergewicht')
+
+
 # Schaltjahres-Berechnung
 # Eingabe eines Jahres -> Ausgabe Schaltjahr, kein Schaltjahr
 # Laut Kalender hat ein Jahr 365 Tage. Die Erde braucht aber 365 Tage, 5 Stunden, 48 Minuten und 45 Sekunden, um die Sonne zu umrunden. Der Schalttag gleicht diese Differenz aus – allerdings nicht ganz, dazu sind die Zahlen zu unrund. Denn die überzähligen Stunden, Minuten und Sekunden addieren sich nach vier Jahren zu etwa 23 Stunden und 11 Minuten – also keinem ganzen Tag.
@@ -137,17 +146,17 @@ print(round(bmi, 2))
 # Ausnahme zu den Jahreszahlen, die der Bedingung 2 genügen, sind alle Jahreszahlen,
 # die nach Bedingung 2 kein Schaltjahr sind, aber deren Jahreszahl ganzzahlig durch 400 teilbar.
 # Testwerte: 1600 und 2000 waren Schaltjahre.
-# jahr = int(input('Jahr'))
-#
-# if jahr % 4 != 0:
-# 	print('kein Schaltjar')
-# elif jahr % 100 == 0:
-# 	if jahr % 400 == 0:
-# 		print('Schaltjahr')
-# 	else:
-# 		print('kein Schaltjhar')
-# else:
-# 	print('Schaltjahr')
+jahr = int(input('Jahr'))
+
+if jahr % 4 != 0:
+	print('kein Schaltjar')
+elif jahr % 100 == 0:
+	if jahr % 400 == 0:
+		print('Schaltjahr')
+	else:
+		print('kein Schaltjhar')
+else:
+	print('Schaltjahr')
 jahr = int(input("Bitte gebe das Jahr an\n"))
 if jahr % 4 == 0:
 	if jahr % 100 == 0:
@@ -159,3 +168,17 @@ if jahr % 4 == 0:
 		print("Schaltjahr")
 else:
 	print("kein Schaltjahr")
+
+years = [1720, 1972, 1980, 1700, 1800, 2100, 1600, 2000, 1200]
+for year in years:
+
+
+	if year % 4 != 0 or year % 100 == 0 and year % 400 != 0:
+		print('kein Schaltjahr')
+	else:
+		print(' Schaltjahr')
+
+	if year % 4 == 0 and (year % 100 != 0 or year % 400 == 0):
+		print(' Schaltjahr  ++')
+	else:
+		print('kein Schaltjahr ++')

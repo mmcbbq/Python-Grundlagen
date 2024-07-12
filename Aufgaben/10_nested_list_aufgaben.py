@@ -1,6 +1,5 @@
 
 # Erstelle eine list tic
-tic = []
 # Füge tic eine Liste mit den werten 'l','l','l' hinzu
 # Füge tic eine 2. liste mir den werten 'k','k','k' hinzu
 # Füge tic eine 3. liste mir den werten 'b','b','b' hinzu
@@ -37,8 +36,3 @@ tic = []
 
 #Schreib eine If anweisung die 'Sieg' ausgibt wenn das Zeiche auf pos 1.1 das selbe ist wie auf pos 2.2 und 3.3
 
-eingabe= input("Feld?") -> a:8
-tic[eingabe[0][eingabe[-1]]]
-
-import random
-random.randint(0,2)

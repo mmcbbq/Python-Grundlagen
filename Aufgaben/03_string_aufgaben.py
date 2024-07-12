@@ -10,7 +10,7 @@
 
 # Tausche den Wert der Variablen hallo und welt
 
-a = "abcdefghijklmnopqrstuvwxyz "
+alphabet = "abcdefghijklmnopqrstuvwxyz "
 
 # Erstelle eine Variable name und weise ihr den Vor- und Nachnamen bob studehi zu.
 # Benutze dafür nur die Buchstaben aus der Variable alphabet
@@ -20,7 +20,6 @@ a = "abcdefghijklmnopqrstuvwxyz "
 # Printe den Nachnahmen mit Slicen der name Variable
 
 # Erstelle eine Variable name_9999, in der dein Name 9999-mal gespeichert ist
-
 
 
 

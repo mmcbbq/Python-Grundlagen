@@ -1,7 +1,7 @@
 # Die print Funktion ist eine in Python eingebaute Funktion.
 # Eine Liste von allen eingebauten Funktionen. https://docs.python.org/3/library/functions.html#func-list
 
-# Um eine Funktion zu benutzen muss man sie aufrufen oder function call oder function invocation
+# Um eine Funktion zu benutzen, muss man sie aufrufen oder function call oder function invocation
 # Man schreibt den funktionsnamen gefolgt von Klammer auf klammer zu "()"
 print()
 
@@ -15,7 +15,7 @@ print("Hallo", "Welt ", "Wie geht es dir")
 
 # Bei Positianl arguments ist die Reihenfolge wichtig.
 # Keyword arguments bei diesen ist die Position egal.
-# Sie werden mit einem für die Funktion spezielen Keyword angesprochen.
+# Sie werden mit einem für die Funktion speziellen Keyword angesprochen.
 # Für print die end und sep Keyword arguments
 
 # Die print Funktion sendet Informationen an die Konsole

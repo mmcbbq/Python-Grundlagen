@@ -42,7 +42,7 @@ b = a[0:6]  # die Variable ansprechen und in [] definieren welche Stellen man au
 # bis zur 6 Stelle aber nicht inklusiv der 6 Stelle
 print(b)
 
-# von der 12 bis zur 15 -> super
+# von der 11 bis zur 15 -> super
 c = a[11:16]
 print(c)
 

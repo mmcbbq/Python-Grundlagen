@@ -1,4 +1,3 @@
-
 # Eine Variable im allgemeinsten Sinne ist einfach ein Behälter (Container) zur Aufbewahrung von bestimmten Werten.
 # Eine Variable wird definiert, indem ich einen Namen vergebe und mit dem zuweisungsoperator = diese "Behälter" völle.
 my_var = "Hallo Welt"
@@ -22,7 +21,7 @@ test_nummer = "test"  # sollte man machen
 print(test)
 
 # Vor dem Aufrufen müssen Variablen definiert werden
-#print(aufruf) # erzeugt einen error
+# print(aufruf) # erzeugt einen error
 aufruf = "falsch"
 # Man kann beliebig viele Variablen erstellen
 name1 = "Bob"
@@ -42,12 +41,11 @@ wort = "Test" * zahl
 print(zahl)
 print(wort)
 
-
 # Um eine Variable hochzuzählen wird die Variable bei der Zuweisung selbst Aufgerufen
 bob_autos = 1
 bob_autos = bob_autos + 1
 
-bob_autos += 1 # Das ist die kurz Schreibweise für Zeile 49
+bob_autos += 1  # Das ist die kurz Schreibweise für Zeile 49
 
 # Man kann alle anderen mathematische Operationen verwenden
 bob_autos -= 1
@@ -61,14 +59,20 @@ print(bob_autos)
 
 # In Python kann man viele Variablen in einer Zeile definieren
 a, b, c = 5, 3, 2
-print(a,b)
+print(a, b)
 
 # Um Variablenwerte zu tauschen, benötigt man einen Zwischenspeicher
 zwisch = a
 a = b
 b = zwisch
-print(a,b)
+print(a, b)
+# Ohne Zwischenspeicher mit xor
+a = 5
+b = 10
+a = a ^ b  # a =  a^b
+b = a ^ b  # b = (a^b) ^ b = a_vorher
+a = a ^ b  # a = (a^b) ^ a = b_vorher
+print(a, b)
 # In Python kann man dies aber auch wie folgt lösen
 a, b = b, a
 print(a, b)
-

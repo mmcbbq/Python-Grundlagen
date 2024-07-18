@@ -25,14 +25,14 @@
 # und die Liste wie in der vorherigen Aufgabe ausgegeben werden
 # 1['o', 'o', 'o']
 # 2['x', 'x', 'o']
-# 3['o', 'x', 'o']
+# 3['o', 'x', 	'o']
 #    a    b    c
 # Beispiel Zahl1 = 3 Zahl2 = 2 Buchstabe = p
 # 1['o', 'o', 'o']
 # 2['x', 'x', 'p']
 # 3['o', 'x', 'o']
 
-# Zähle alle "o" in der mittleren Liste
+# Zähle alle "o" in der mittleren Liste index 1
 
 #Schreib eine If anweisung die 'Sieg' ausgibt wenn das Zeiche auf pos 1.1 das selbe ist wie auf pos 2.2 und 3.3
 

@@ -23,12 +23,30 @@ print('#########################################')
 
 for name in user:
 	if 'i' in name:
-		print('createuser', name, z)
+		print('createuser', name)
 # Tausche in jedem Namen den Buchstaben "B" gegen ein '8', 'E' gegen ein '3' 'o' gegen 0 und 'i' gegen '1' aus.
 print('#########################################')
 for name in user:
 	print(name.replace('B', '8').replace('E', '3').replace('o', '0').replace('i', '1'))
 
+print('#########################################')
+print('#########################################')
+print('#########################################')
+
+for name in user:
+	new_name = ""
+	for letter in name:
+		if letter == 'B':
+			new_name += '8'
+		elif letter == 'E':
+			new_name += '3'
+		elif letter == 'o':
+			new_name += '0'
+		elif letter == 'i':
+			new_name += '1'
+		else:
+			new_name += letter
+	print(new_name)
 # Es soll folgende Ausgabe mit einer Schleife erzeugt werden
 # Tip "\t"
 
@@ -42,6 +60,11 @@ z = 0
 for name in user:
 	print('\t' * z, name)
 	z += 1
+
+for z, name in enumerate(user):
+	print(z)
+	tabstring = '\t' * z
+	print(f'{tabstring}{name}')
 
 rand_zahlen = [452, 30, 688, 177, 534, 137, 490, 387, 845, 882, 896, 798, 456, 691, 932, 978, 333, 499, 222, 775, 866,
 			   976, 809, 803, 970, 840, 2, 814, 638, 189, 255, 960, 199, 350, 365, 104, 396, 794, 489, 497, 380, 598,

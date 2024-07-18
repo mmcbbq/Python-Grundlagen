@@ -38,6 +38,7 @@ for student, noten in student_scores.items():
 		summe += note
 		anzahl += 1
 	print(f'{student} {summe / anzahl:.2f}')
+print("-" * 30)
 
 # Schreibe eine Schleife, die den Namen des Schülers mit der höchsten Gesamtnote aus dem Dictionary student_scores ausgibt.
 # best = list(student_scores.keys())[0]
@@ -52,6 +53,7 @@ for student, noten in student_scores.items():
 		best_punkte = summe
 		best_student = student
 print(best_student)
+print("-" * 30)
 
 # Schreibe eine Schleife, die das maximale Ergebnis für jeden Schüler aus dem Dictionary student_scores ausgibt.
 # Schreibe eine Schleife, die das minimale Ergebnis für jeden Schüler aus dem Dictionary student_scores ausgibt.
@@ -64,6 +66,8 @@ for keys, values in student_scores.items():
 		elif note < min_wert:
 			min_wert = note
 	print(f'{keys} {min_wert} {max_wert}')
+print("-" * 30)
+
 # Schreibe eine Schleife, die den Namen des Schülers mit dem höchsten Durchschnitt aus dem Dictionary student_scores ausgibt.
 
 best_student = "Alice"
@@ -81,6 +85,7 @@ for student, noten in student_scores.items():
 		best_student = student
 print(f'Der beste student ist {best_student} mit einem durschnitt von {best_durchschnitt:.2f}	')
 
+print("-" * 30)
 
 
 # Gegeben ist das folgende Dictionary . Schreibe eine Schleife, die den Namen der Frucht mit dem höchsten Bestand ausgibt.
@@ -88,27 +93,42 @@ fruits = {'Apfel': {'bestand': 100, 'verkauft': 20, 'preis': 0.25, 'lager kapazi
 		  'Banane': {'bestand': 78, 'verkauft': 42, 'preis': 0.12, 'lager kapazität': 100},
 		  'Orange': {'bestand': 24, 'verkauft': 11, 'preis': 0.39, 'lager kapazität': 50}
 		  }
+name = ''
+max_bestand = 0
+for key, val in fruits.items():
+	if val['bestand'] > max_bestand:
+		max_bestand = val['bestand']
+		name = key
+print(f'Der höchste Bestand von {max_bestand} hat der {name}')
+
+print("-" * 30)
 
 # erweitere fruits um den Eintrag 'Traube: {'bestand': 150, 'verkauft': 0, 'preis': 0.59, 'lager kapazität': 150}
+fruits['Traube'] = {'bestand': 150, 'verkauft': 0, 'preis': 0.59, 'lager kapazität': 150}
 # Schreibe eine Schleife, die den Namen und den Bestand jeder Frucht in fruits ausgibt.
+for key, val in fruits.items():
+	print(f'{key}:\t {val["bestand"]} ')
 # Schreibe eine Schleife, die den Wert der Fruechte in bestand sowie den wert der verkauften Fruechte ausgibt.
+for fruit, liste in fruits.items():
+	print(f'{fruit}: Bestandwert {liste["bestand"] * liste["preis"]} Einnahmen {liste["verkauft"] * liste["preis"]}')
 # Berechne die auslastung der lager Kapazität in % fuer alle Fruechte.
-
+for fruit , liste in fruits.items():
+	print(f'{fruit}: {liste["bestand"]*100 / liste["lager kapazität"]}%')
 # Gegeben sind die folgenden Dictionaries: dict1 = {'a': 1, 'b': 2, 'c': 3} und dict2 = {'b': 3, 'c': 4, 'd': 5}. Schreibe eine Schleife, die die gemeinsamen Schlüssel von dict1 und dict2 ausgibt.
 dict1 = {'a': 1, 'b': 2, 'c': 3}
-
 dict2 = {'b': 3, 'c': 4, 'd': 5}
 print('-'*30)
 for key in dict1:
 	if key in dict2:
 		print(key)
 # Schreibe eine Schleife, die ein neues Dictionary erstellt, das die Summe der Werte für jeden gemeinsamen Schlüssel in dict1 und dict2 enthält.
-
+print('-'*30)
 summe_dict = {}
 for key in dict1:
 	if key in dict2:
 		summe_dict[key] = dict1[key] + dict2[key]
 print(summe_dict)
+print('-'*30)
 # Schreibe eine Schleife, die ein neues Dictionary erstellt, das die absoluten Differenzen der Werte für jeden gemeinsamen Schlüssel in dict1 und dict2 enthält.
 diff_dict = {}
 for key in dict1:

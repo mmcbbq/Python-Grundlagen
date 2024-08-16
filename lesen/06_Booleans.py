@@ -106,3 +106,4 @@ print('True xor False:', (a and not b) or (not a and b))
 a = False
 b = False
 print('False xor False:', (a and not b) or (not a and b))
+

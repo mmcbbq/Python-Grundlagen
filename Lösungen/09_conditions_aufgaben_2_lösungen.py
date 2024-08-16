@@ -154,7 +154,7 @@ elif jahr % 100 == 0:
 	if jahr % 400 == 0:
 		print('Schaltjahr')
 	else:
-		print('kein Schaltjhar')
+		print('kein Schaltjahr')
 else:
 	print('Schaltjahr')
 jahr = int(input("Bitte gebe das Jahr an\n"))
@@ -182,3 +182,56 @@ for year in years:
 		print(' Schaltjahr  ++')
 	else:
 		print('kein Schaltjahr ++')
+
+
+
+# Aufgabe: Berechnung der Energieverbrauchskosten
+# Erstelle ein Programm, das die monatlichen Energiekosten eines Haushalts basierend auf dem Energieverbrauch berechnet. Dabei werden unterschiedliche Preise für verschiedene Verbrauchsstufen und ein Bonus für energiesparende Haushalte berücksichtigt.
+#
+# Berechnung:
+# Basispreis:
+#
+# Für die ersten 100 kWh: 0,30 Euro pro kWh
+# Für die nächsten 200 kWh (zwischen 101 kWh und 300 kWh): 0,25 Euro pro kWh
+# Für den Verbrauch über 300 kWh: 0,20 Euro pro kWh
+# Bonus für energiesparende Haushalte:
+#
+# Wenn der gesamte Verbrauch unter 150 kWh liegt, erhält der Haushalt einen Bonus von 10 Euro, der von den Gesamtkosten abgezogen wird.
+# Das Programm sollte den Benutzer nach dem monatlichen Energieverbrauch in kWh fragen und dann die Gesamtkosten unter Berücksichtigung der oben genannten Bedingungen berechnen.
+
+test = [149, 150, 151, 299, 300, 301, 199, 99, 100, 101]
+
+verbraucht = int(input('Verbrauch:\n'))
+if verbraucht < 0:
+	preis = 0
+elif verbraucht < 150:
+	if verbraucht <= 100:
+		preis = verbraucht * 0.3 - 10
+	else:
+		preis = (verbraucht - 100) * 0.25 + 100 * 0.3 - 10
+elif verbraucht >= 150:
+	if verbraucht > 300:
+		preis = (verbraucht - 300) * 0.2 + 200 * 0.25 + 100 * 0.3
+	else:
+		preis = (verbraucht - 100) * 0.25 + 100 * 0.3
+if preis < 0:
+	preis = 0
+print(f"preis: {preis} Euro ")
+
+preis = 0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

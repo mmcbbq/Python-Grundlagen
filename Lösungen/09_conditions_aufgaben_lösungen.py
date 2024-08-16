@@ -31,7 +31,6 @@ elif tag == '2':
     print('dienstag')
 elif tag == '3':
     print('Mi')
-
 elif tag == '5':
     print('Fr')
 elif tag == '6':

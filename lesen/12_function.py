@@ -97,7 +97,8 @@ my_sum(8, 9)
 
 # Funktionen können Rückgabewerte enthalten. return value.
 def my_sum_return(a, b):
-	return a + b
+	summe = a + b
+	return summe
 
 
 # Diese return values werden bei dem Ausführen des Programmes an die Stelle gesetzt an dem die Funktion aufgerufen wird

@@ -18,13 +18,7 @@ tim = ["k", 'e', '', "", 'on', 'on', 'on', 'onn', 'on', '', "", 'PR', 'xx', 'n',
 # In der liste Tim sollen alle Werte gezaehlt werden. Nutze zum Zaehlen das anzahl_buchstaben dict.
 # Ausgabe
 anzahl_buchstaben = {'x': 0,'k': 0, 'on' : 0, 'e': 0, '': 0, 'PR': 0, 'FE' : 0, 'fehleingabe' : [ ]}
-for x in tim:
-	if x in anzahl_buchstaben:
-		anzahl_buchstaben[x] += 1
-	else:
-		anzahl_buchstaben['fehleingabe'].append(x)
-for key, val in anzahl_buchstaben.items():
-	print(f'{key} = {val}')
+
 # k = 5
 # x =10
 # on = 6
@@ -38,23 +32,5 @@ students = ['Ali', 'Mehmet', 'Ali', 'Philipp', 'Sven', 'Alexander', 'Matrix', 'M
 			'Darius', 'Elsa', 'Coskun', 'Grigorius', 'Kaycee', 'Carsten', 'Bader', 'Athanasios']
 # Zaehle alle "a" in den Namen (case-insensitive)
 # Zaehle alle "m" in den Namen
-anzahl_m = 0
-anzahl_a = 0
-for name in students:
-	for b in name:
-		if b.lower() == 'a':
-			anzahl_a += 1
-		if b.lower() == 'm':
-			anzahl_m += 1
-print(anzahl_a)
-print(anzahl_m)
-# Erstelle ein dict in dem der Buchstabe "Key (case-insensitive) und die Anzahl "Value" aller Namen gespeichert werden.
-anzahl_buchstaben ={}
-for name in students:
-	for l in name:
-		if l.lower() in anzahl_buchstaben:
-			anzahl_buchstaben[l.lower()] += 1
-		else:
-			anzahl_buchstaben[l.lower()] = 1
-print(anzahl_buchstaben)
+
 

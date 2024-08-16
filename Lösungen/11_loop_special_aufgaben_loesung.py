@@ -17,6 +17,18 @@
 # umgewandelt werden kann … dafür wird die Seitenlänge des Quadrats benötigt.
 
 # Schreibe den Algorithmus in Pyhton fuer 10 wiederholungen
+# wurzel = 2
+# x= wurzel/2
+# for z in range(10):
+# 	print(z+1)
+# 	print(f'x: {x}')
+# 	print(f'{x} + {wurzel}/{x}/2 = ', end='')
+# 	x = (x + wurzel/x)  / 2
+# 	print(x)
+# 	print('='*30)
+import time
+
+
 
 # Schreibe eine while loop die den Algorithmus solange ausfuehrt
 # bis der Näherungswert auf 0.1 des exakten Ergebnis liegt
@@ -28,7 +40,22 @@
 # kleiner oder gleich einer vorgegebenen Zahl.
 #
 # Aus http://de.wikipedia.org/wiki/Sieb_des_Eratosthenes:
-#
+
+jetzt = time.time()
+primzahlen = []
+for x in range(2,100):
+	primzahlen.append(x)
+
+
+
+for primzahl in primzahlen:
+	for kandidat in primzahlen:
+		if primzahl != kandidat:
+			if kandidat % primzahl == 0:
+				primzahlen.remove(kandidat)
+
+print(primzahlen)
+print(time.time() - jetzt)
 # Zunächst werden alle Zahlen 2, 3, 4, … bis zu einem frei wählbaren Maximalwert N aufgeschrieben.
 # Die zunächst unmarkierten Zahlen sind potentielle Primzahlen. Die kleinste unmarkierte Zahl ist immer eine Primzahl.
 # Nachdem eine Primzahl gefunden wurde, werden alle Vielfachen dieser Primzahl als zusammengesetzt markiert.

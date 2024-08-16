@@ -56,14 +56,17 @@ for x in range(1, 101):
 # Schreibe eine Funktion mit 3 Parametern par_1 = bool par_2 = bool und par_3 = string
 # Der String soll entweder and, or oder xor.
 # Die Funktion soll eine Art Logische Operator Taschenrechner werden
+
+
 def logischer_rechner(par_1, par_2, string):
 	if 'and' == string:
 		# print(f'{par_1} and {par_2} = {par_1 and par_2}')
 		print(par_1, 'and', par_2, '=', par_1 and par_2)
 	elif 'or' == string:
 		print(f'{par_1} or {par_2} = {par_1 or par_2}')
-	elif 'xor' == string:
+	elif 'xor' == string and par_1 ^ par_2:
 		print(f'{par_1} xor {par_2} = {par_1 ^ par_2}')
+
 
 print('--------------------------------')
 logischer_rechner(False, False, 'and')

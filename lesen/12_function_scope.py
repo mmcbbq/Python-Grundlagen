@@ -11,13 +11,13 @@ hallo()
 
 var = "global"
 hallo()
-
+print('###########################################################')
 
 def hallo_g():
 	print(f'hallo_g:{var}')
 
 
-hallo_g()
+# hallo_g()
 
 
 def hallo_innen():
@@ -29,7 +29,7 @@ def hallo_aussen():
 	hallo_innen()
 	print(var)
 
-
+print('call hallo_aussen')
 hallo_aussen()
 
 print('-------------------ander der Uebergabe----------------')

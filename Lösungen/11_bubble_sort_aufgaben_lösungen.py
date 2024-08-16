@@ -5,42 +5,36 @@
 # Dieser Prozess wird so lange wiederholt, bis die gesamte Liste sortiert ist.
 
 liste = [27, 29, 7, 76, 56]
-
-# liste = [40, 8, 63, 60, 12, 4, 13, 82, 87, 87, 87, 84, 85, 39, 57, 55, 72, 6]
-# , 46, 18, 5, 97, 78, 64, 94, 64, 62, 22, 11,
-# 	 89, 92, 53, 22, 51, 44, 49, 6, 87, 57]
-# , 20, 39, 67, 87, 49, 71, 79, 80, 94, 19, 57, 13, 71, 51, 99, 68, 31, 80,
-# 63, 41, 17, 25, 7, 88, 86, 29, 58, 99, 63, 28, 59, 2, 34, 15, 73, 36, 90, 9, 75, 61, 40, 1, 23, 71, 94, 75, 46,
-# 59, 72, 73, 63, 93, 90, 68, 7, 29, 92, 44, 74, 84, 80]
-n = 0
+#         0   1  2   3   4
+liste = [40, 8, 63, 60, 12, 4, 13, 82, 87, 87, 87, 84, 85, 39, 57, 55, 72, 6, 46, 18, 5, 97, 78, 64, 94, 64, 62, 22, 11,
+		 89, 92, 53, 22, 51, 44, 49, 6, 87, 57, 20, 39, 67, 87, 49, 71, 79, 80, 94, 19, 57, 13, 71, 51, 99, 68, 31, 80,
+		 63, 41, 17, 25, 7, 88, 86, 29, 58, 99, 63, 28, 59, 2, 34, 15, 73, 36, 90, 9, 75, 61, 40, 1, 23, 71, 94, 75, 46,
+		 59, 72, 73, 63, 93, 90, 68, 7, 29, 92, 44, 74, 84, 80]
+vergleiche = 0
 for y in range(len(liste) - 1):
-	print(f'start outer loop {y}')
-
+	print('start aussen')
 	for x in range(len(liste) - 1 - y):
-
-		print(liste[x], liste[x + 1], 'vergleich')
+		print('start innen')
+		print(f'{liste[x]} vergleiche mit {liste[x + 1]}')
+		vergleiche += 1
 		if liste[x] > liste[x + 1]:
-			liste[x], liste[x + 1] = liste[x + 1], liste[x]
-
-			# zwischen = liste[x]
-			# liste[x] = liste[x + 1]
-			# liste[x + 1] = zwischen
-
-			print('getauscht')
-		else:
-			print('nicht getauscht')
-		print(liste)
-	print('outer loop end')
-print(liste)
-# for k in range(len(liste) - 1):
-# 	for zahl in range(len(liste) - 1 - k):
-# 		if liste[zahl] > liste[zahl + 1]:
-# 			liste[zahl], liste[zahl + 1] = liste[zahl + 1], liste[zahl]
-# print(liste)
+			zwischen = liste[x]
+			liste[x] = liste[x + 1]
+			liste[x + 1] = zwischen
+			print(f'habe {liste[x]} und {liste[x + 1]} getauscht')
+		print('ende innen')
+	print('ende aussen')
+	print(liste)
+print(vergleiche)
+print(len(liste))
+liste = [40, 8, 63, 60, 12, 4, 13, 82, 87, 87, 87, 84, 85, 39, 57, 55, 72, 6, 46, 18, 5, 97, 78, 64, 94, 64, 62, 22, 11,
+		 89, 92, 53, 22, 51, 44, 49, 6, 87, 57, 20, 39, 67, 87, 49, 71, 79, 80, 94, 19, 57, 13, 71, 51, 99, 68, 31, 80,
+		 63, 41, 17, 25, 7, 88, 86, 29, 58, 99, 63, 28, 59, 2, 34, 15, 73, 36, 90, 9, 75, 61, 40, 1, 23, 71, 94, 75, 46,
+		 59, 72, 73, 63, 93, 90, 68, 7, 29, 92, 44, 74, 84, 80]
 
 list_dic = [{'name': 'Melanie Reilly', 'email': 'jacksonlopez@example.com', 'anzahl': 40},
 			{'name': 'Gregory Russell', 'email': 'swilliams@example.net', 'anzahl': 8},
-			{'name': 'Aaron Ross', 'email': 'kevincline@example.org', 'anzahl': 63},
+			{'name': 'Aaron Ross', 'email': 'kevincline@example.org', 'anzahl': 99},
 			{'name': 'Meredith Coleman', 'email': 'qvargas@example.com', 'anzahl': 60},
 			{'name': 'Michael Salazar', 'email': 'patriciasmith@example.net', 'anzahl': 12},
 			{'name': 'Patricia Davis', 'email': 'hernandezlindsay@example.net', 'anzahl': 4},
@@ -139,12 +133,47 @@ list_dic = [{'name': 'Melanie Reilly', 'email': 'jacksonlopez@example.com', 'anz
 			{'name': 'Logan Stevens', 'email': 'ryanbradley@example.net', 'anzahl': 84},
 			{'name': 'Matthew Barry', 'email': 'annerowe@example.com', 'anzahl': 80}]
 
-for x in range(len(list_dic) - 1):
-	for z in range(len(list_dic) - x - 1):
-		if list_dic[z]["anzahl"] > list_dic[z + 1]["anzahl"]:
-			list_dic[z], list_dic[z + 1] = list_dic[z + 1], list_dic[z]
+# list_dic = [{'name': 'Melanie Reilly', 'email': 'jacksonlopez@example.com', 'anzahl': 40},
+# 			{'name': 'Gregory Russell', 'email': 'swilliams@example.net', 'anzahl': 8},
+# 			{'name': 'Aaron Ross', 'email': 'kevincline@example.org', 'anzahl': 63},
+# 			{'name': 'Meredith Coleman', 'email': 'qvargas@example.com', 'anzahl': 63},
+# 			{'name': 'Michael Salazar', 'email': 'patriciasmith@example.net', 'anzahl': 12}
+# ]
 
+vergleiche = 0
+vergleiche2 = 0
+for y in range(len(list_dic) - 1):
+	vergleiche2 += 1
+	for x in range(len(list_dic) - 1 - y):
+		print(list_dic[x]['anzahl'], list_dic[x + 1]['anzahl'])
+		vergleiche += 1
+		if list_dic[x]['anzahl'] > list_dic[x + 1]['anzahl']:
+			print('tausch')
+			zw = list_dic[x]
+			list_dic[x] = list_dic[x + 1]
+			list_dic[x + 1] = zw
+for z in list_dic:
+	print(z)
+print(vergleiche)
+print(vergleiche2)
+print(ord("A"))
+print(ord("B"))
 
-for x in list_dic:
-	print(x["anzahl"])
+if '15' > "122":
+	print('15 ist g')
+for y in range(len(list_dic) - 1):
+	vergleiche2 += 1
+	for x in range(len(list_dic) - 1 - y):
+		# print(list_dic[x]['anzahl'], list_dic[x + 1]['anzahl'])
+		vergleiche += 1
+		if list_dic[x]['anzahl'] > list_dic[x + 1]['anzahl']:
+			# print('tausch')
+			zw = list_dic[x]
+			list_dic[x] = list_dic[x + 1]
+			list_dic[x + 1] = zw
+		elif list_dic[x]["anzahl"] == list_dic[x + 1]["anzahl"]:
+			if list_dic[x]['name'] > list_dic[x + 1]['name']:
+				list_dic[x], list_dic[x + 1] = list_dic[x + 1], list_dic[x]
 
+for z in list_dic:
+	print(z)

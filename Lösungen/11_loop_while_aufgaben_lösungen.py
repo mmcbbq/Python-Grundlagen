@@ -63,8 +63,6 @@ while nicht_richtig:
 		print('Keine Versuche mehr')
 		break
 	print('Du hast noch ',versuche)
-
-
 print('Die Zahl war ', zufall_zahl)
 
 

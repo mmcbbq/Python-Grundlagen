@@ -280,13 +280,13 @@ print(sieg_diag_or_ul(spielfeld))
 # ob ein gegebener Text ein Palindrom ist
 # (d.h., vorwärts und rückwärts gelesen dasselbe ist
 
-# def palindrom(string):
-# 	for x in range(len(string)//2):
-# 		if pal[x] == pal[len(string)-1-x]:
-# 			continue
-# 		else:
-# 			return False
-# 	return True
+def palindrom(string):
+	for x in range(len(string)//2):
+		if pal[x] == pal[len(string)-1-x]:
+			continue
+		else:
+			return False
+	return True
 pal = 'Erika feuert nur untreue Fakire'.replace(' ', '')
 # def palindrom(string):
 # 	re_string = string[::-1]

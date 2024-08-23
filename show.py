@@ -1,71 +1,67 @@
-# import requests
-# from bs4 import BeautifulSoup as bs
-# anagram = []
-# for i in range(1,96):
-# 	url = f'https://www.d-rhyme.de/anagramm-lexikon/seite-{i}/'
-# 	req = requests.get(url)
-# 	html_bs = bs(req.text, features="html.parser")
-# 	html_tr_list = html_bs.find('table').find_all('td')
-# 	for ele in html_tr_list:
-# 		if len(ele.findChildren()) > 0:
-# 			for ele_text in ele.findChildren():
-# 				anagram.append(ele_text.text)
-# 		else:
-# 			anagram.append(ele.text)
-# with open(r'C:\BBQ\Python\anagram.txt','w') as fp:
-# 	for x in anagram:
-# 		fp.write(x+'\n')
-# print(anagram)
+geld = {"500": 1, '200': 0, "100": 1, '50': 0, '20': 0, '10': 0, '5': 0, '2': 0, '1': 0, '0,50': 0, '0,20': 0,
+		'0,10': 0, '0,05': 0, '0,02': 0, '0,01': 0}
+
+def dic_foat(dic: dict):
+	summe = 0
+	for key, val in dic.items():
+		key = key.replace(',', '.')
+		summe += float(key) * val
+	return summe
+
+def rueckgabe_summe(erhalten, kaufpreis):
+	return erhalten - kaufpreis
 
 
-# words = ["lesen", "seeln", "hören", "renhö", "stein", "tines", "rat", "tar", "lieb", "blei", "gärtner", "rantger", "kragen", "garnek", "leben", "nebel", "lager", "regal"]
-#
-# anagram = []
-# for index, word in enumerate(words):
-#     sorted_word_list = sorted(word)
-#     sorted_word = ''
-#     for letter in sorted_word_list:
-#         sorted_word += letter
-#     for test_word_index in range(index + 1 , len(words)):
-#         test_sorted_word_list = sorted(words[test_word_index])
-#         test_sorted_word = ''
-#         for letter in test_sorted_word_list:
-#             test_sorted_word += letter
-#         if test_sorted_word == sorted_word:
-#             anagram.append([word,words[test_word_index]])
-#
-# print(anagram)
-# # students_grades = {
-# #     "Anna": [85, 78, 92],
-# #     "Ben": [88, 90, 85],
-# #     "Clara": [95, 91, 89],
-# #     "David": [76, 85, 80],
-# #     "Eva": [90, 88, 92],
-# #     "Felix": [82, 77, 79],
-# #     "Greta": [91, 93, 90],
-# #     "Hanna": [84, 86, 88],
-# #     "Isaac": [89, 87, 90],
-# #     "Julia": [92, 94, 91],
-# #     "Kevin": [78, 74, 80],
-# #     "Lena": [85, 89, 87],
-# #     "Max": [88, 92, 90],
-# #     "Nina": [83, 79, 81],
-# #     "Oscar": [80, 82, 85],
-# #     "Paula": [91, 88, 90],
-# #     "Quentin": [77, 73, 79],
-# #     "Rita": [90, 85, 88],
-# #     "Simon": [86, 89, 87],
-# #     "Tina": [93, 91, 94]
-# # }
-# # for name ,liste in students_grades.items():
-# #     summe = 0
-# #     anzahl = 0
-# #     for punkte in liste:
-# #         summe += punkte
-# #         anzahl += 1
-# #     print(f'{name} hat eine Durchschnittsnote von {summe / anzahl}')
-# #
-# #
-# list_a = ['a', 'b']
-# list_b = ['b', 'a']
-# print(list_a == list_b)
+def rueckgabe_einheiten(wechselgeld):
+	geld = {"500": 0, '200': 0, "100": 0, '50': 0, '20': 0, '10': 0, '5': 0, '2': 0, '1': 0, '0,50': 0, '0,20': 0,
+			'0,10': 0, '0,05': 0, '0,02': 0, '0,01': 0}
+	for key, val in geld.items():
+		key_int = float(key.replace(',', '.'))
+		while key_int < wechselgeld:
+			geld[key] += 1
+			wechselgeld -= key_int
+	return geld
+print(dic_foat(geld))
+print(rueckgabe_einheiten(rueckgabe_summe(dic_foat(geld), kaufpreis)))
+produkte = [
+	{'id': 40158, 'name': 'Laptop', 'preis': 10.0, 'anzahl': 4, 'mwst': 19},
+	{'id': 49032, 'name': 'Tablet', 'preis': 12.5, 'anzahl': 2, 'mwst': 19},
+	{'id': 96590, 'name': 'Smartphone', 'preis': 15.0, 'anzahl': 4, 'mwst': 7},
+	{'id': 18036, 'name': 'Kaffeemaschine', 'preis': 17.5, 'anzahl': 6, 'mwst': 19},
+	{'id': 73245, 'name': 'Kühlschrank', 'preis': 20.0, 'anzahl': 8, 'mwst': 19},
+	{'id': 51449, 'name': 'Waschmaschine', 'preis': 22.5, 'anzahl': 10, 'mwst': 7},
+	{'id': 24910, 'name': 'Fernseher', 'preis': 25.0, 'anzahl': 12, 'mwst': 7},
+	{'id': 12764, 'name': 'Kamera', 'preis': 27.5, 'anzahl': 14, 'mwst': 7},
+	{'id': 17308, 'name': 'Monitor', 'preis': 30.0, 'anzahl': 16, 'mwst': 19},
+	{'id': 74501, 'name': 'Headset', 'preis': 32.5, 'anzahl': 18, 'mwst': 7},
+	{'id': 95951, 'name': 'Tastatur', 'preis': 35.0, 'anzahl': 20, 'mwst': 19},
+	{'id': 47012, 'name': 'Maus', 'preis': 37.5, 'anzahl': 22, 'mwst': 19},
+	{'id': 19274, 'name': 'Drucker', 'preis': 40.0, 'anzahl': 24, 'mwst': 19},
+	{'id': 36044, 'name': 'Lautsprecher', 'preis': 42.5, 'anzahl': 26, 'mwst': 7},
+	{'id': 67299, 'name': 'Mikrowelle', 'preis': 45.0, 'anzahl': 28, 'mwst': 19},
+	{'id': 48291, 'name': 'Staubsauger', 'preis': 47.5, 'anzahl': 30, 'mwst': 7},
+	{'id': 25900, 'name': 'Router', 'preis': 50.0, 'anzahl': 32, 'mwst': 7},
+	{'id': 96962, 'name': 'Schreibtischlampe', 'preis': 52.5, 'anzahl': 34, 'mwst': 7},
+	{'id': 94091, 'name': 'Smartwatch', 'preis': 55.0, 'anzahl': 36, 'mwst': 7},
+	{'id': 34546, 'name': 'Gaming-Stuhl', 'preis': 57.5, 'anzahl': 38, 'mwst': 19}
+]
+
+
+def berechne_summe(produkte):
+	summe = 0
+	for produkt in produkte:
+		summe += produkt['anzahl'] * produkt['preis']
+	return summe
+
+
+def mwst(mwst, produkte):
+	mwst_betrag = 0
+
+	for x in produkte:
+		if mwst == x['mwst']:
+			mwst_betrag += ((x['preis'] * 100 / (100 + mwst)) - x['preis'])
+
+
+# print(berechne_summe(produkte))
+
+print((6.48 * 100 / (100 + 19)) - 6.48)

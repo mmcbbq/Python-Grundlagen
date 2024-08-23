@@ -12,9 +12,9 @@ print(plus(4))
 # plus(3) -> 3 + plus(2) das Argument geht wird immer kleiner
 # plus(2) -> 2 + plus(1) wenn es dann bei 1 angekommen ist
 # plus(1)  1 stop es sich selbst aufzurufen und return nur eine 1
-# nun koennen die von hinten nach vorne die return values eingesetzt werden
+# nun koennen  von hinten nach vorne die return values eingesetzt werden
 
-# plus(1)
+# plus(1) = 1
 # plus(2) -> 2 + plus(1) = 2 + 1
 # plus(3) -> 3 + plus(2) = 3 + 2 + 1
 # plus(4) -> 4 + plus(3) = 4 + 3 + 2 + 1

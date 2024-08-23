@@ -20,6 +20,8 @@ truthy = {
 	'integer': 1,
 	'floats': 1.0,
 	'bools': True}
+
+
 for key, val in falsy.items():
 	if not val:
 		print(f'{key}: {val} -> false')

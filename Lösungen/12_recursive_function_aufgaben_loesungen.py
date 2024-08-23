@@ -27,8 +27,6 @@ def reverse_string(s):
 my_string = ""
 print(my_string[1:])
 # print(reverse_string(my_string))
-
-
 # Schreibe eine rekursive Funktion is_palindrome(s), die überprüft, ob eine Zeichenkette s ein Palindrom ist.
 def palindrom(wort):
 	if len(wort) <= 1:
@@ -36,24 +34,15 @@ def palindrom(wort):
 	else:
 		if wort[0] == wort[-1]:
 			return palindrom(wort[1:-1])
-
 		else:
 			return False
-
-
 print('ist palindrome',palindrom("ot1ato"))
-
-
 # Schreibe eine rekursive Funktion count_consonants(s), die die Anzahl der Konsonanten in einer Zeichenkette s zählt.
-
 def count_consonants(s):
 	if len(s) == 0:
 		return 0
-
 	elif s[0] in 'aeiou':
 		return 0 + count_consonants(s[1:])
 	else:
 		return 1 + count_consonants(s[1:])
-
-
 print(count_consonants("abcdef"))

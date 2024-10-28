@@ -11,9 +11,9 @@ print(hallo)
 welt = my_var[-4:]
 print(welt)
 # # Tausche den Wert der Variablen hallo und welt
-# zwichen = hallo
+# zwischen = hallo
 # hallo = welt
-# welt = zwichen
+# welt = zwischen
 
 hallo, welt = welt, hallo
 

@@ -11,10 +11,6 @@ print('Hallo', name)
 # und kann einer Variablen zugewiesen werden (name in diesem Fall).
 
 
-
-
-
-
 antwort = input('Schreib deinen namen:\n')
 
 # Standardmäßig gibt input() die vom Benutzer eingegebene Zeichenkette zurück,
@@ -22,5 +18,5 @@ antwort = input('Schreib deinen namen:\n')
 # Wenn du eine Zahl benötigst, musst du die Rückgabe von input() in einen numerischen Typ umwandeln:
 
 alter = int(input('Schreib dein Alter'))
-print(antwort ,type(antwort))
-print(alter ,type(alter))
+print(antwort, type(antwort))
+print(alter, type(alter))

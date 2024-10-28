@@ -1,8 +1,6 @@
 # # Der User wird nach einer Zahl gefragt und es soll ausgegeben werden ob die Zahl = < oder > 10
 
-#
 # # Der User wird nach einer Zahl gefragt. Es soll geprüft werden ob es eine gerade oder ungerade Zahl ist
-
 
 # Schreibe ein Programm, das den Benutzer nach einem Passwort fragt und prüft, ob es mindestens 8 Zeichen lang ist.
 

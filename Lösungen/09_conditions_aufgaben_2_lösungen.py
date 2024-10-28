@@ -221,6 +221,8 @@ print(f"preis: {preis} Euro ")
 preis = 0
 
 
+print("-----------------")
+
 
 
 

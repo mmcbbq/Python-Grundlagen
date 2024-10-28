@@ -1,6 +1,6 @@
 # Der Benutzer soll zwei Zahlen in das Programm eingeben, danach soll er entscheiden, ob die Zahlen addiert,
 # subtrahiert, multipliziert oder dividiert werden, diese Entscheidung soll über die Eingabe der folgenden
-# Symbole getätigt werden = - * /:
+# Symbole getätigt werden + - * /:
 # Bei der Division durch 0 soll die Ausgabe "Das kann nur Chuck Norris" erfolgen
 # Nach der Auswahl soll das Ergebnis der Rechnung ausgegeben werden,
 # bzw. eine Fehlermeldung, falls eine

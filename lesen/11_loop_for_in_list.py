@@ -4,6 +4,8 @@ students = ['Ali', 'Mehmet', 'Ali', 'Philipp', 'Sven', 'Alexander', 'Matrix', 'M
 # Schleife, um jeden Schülernamen in der Liste zu begrüßen
 for vorname in students:
 	print('Hallo', vorname)
+
+
 # Schleife, um die Anzahl der Buchstaben für jeden Schülernamen auszugeben
 for vorname in students:
 	print('Der Name', vorname, 'hat', len(vorname), 'Buchstaben')
@@ -20,7 +22,16 @@ for vorname in students:
 		z += 1  # Wenn ja, inkrementiere den Zähler um 1
 print(z)
 
+
+# Wenn man den Wert sowie den index benoetig muss man die enumerate function auf die Liste anwenden
+students = ['Ahmed', 'David', 'Paul', 'Ilyas', 'Wasim', 'Ali']
+
+for index, namen in enumerate(students):
+	print(namen, index)
+
 print(list(enumerate(students)))
+
+
 # Berechnung der Summe der Zahlen in einer Liste
 zahlen = [12, 15, 18, 2]
 summe = 0  # Initialisierung einer Summenvariable AUSSERHALB DER SCHLEIFE
@@ -40,6 +51,19 @@ print(sum(zahlen))
 
 # zahl = 2
 # summe = 45 + 2 -> summe = 47
+
+# Die Liste sollte in der Schleife nicht in veraendert werden
+# Beim Hinzufügen kann es zu Unendlichkeits-Schleifen kommen
+# Beim Entfernen kommt es ueberspringen von Daten
+
+students = ['Ahmed', 'David', 'Paul', 'PIlyas', 'Wasim', 'Ali']
+change_students = []
+for  x in students:
+	if x[0] != "P":
+		change_students.append(x)
+
+print(change_students)
+
 
 
 # Liste von Zahlen

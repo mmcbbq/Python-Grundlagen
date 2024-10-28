@@ -67,8 +67,8 @@ a = b
 b = zwisch
 print(a, b)
 # Ohne Zwischenspeicher mit xor
-a = 5
-b = 10
+a = 5  #
+b = 7  #
 a = a ^ b  # a =  a^b
 b = a ^ b  # b = (a^b) ^ b = a_vorher
 a = a ^ b  # a = (a^b) ^ a = b_vorher

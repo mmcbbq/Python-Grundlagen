@@ -26,5 +26,27 @@
 
 # Füge die letzten 3 Elemente der list_copy an die super_liste an.
 
+import inspect
+
+zahl1 = 12
+zahl2 = zahl1
+
+array1 = [1,2,3]
+array2 = array1
+print(inspect.getmembers(array1))
 
 
+nummber = 349872390486783459067823459086
+
+print('1nr Stelle\t\t', nummber % 10)
+print('10nr Stelle\t\t', nummber % 100 // 10)
+print('100nr Stelle\t', nummber % 1000 // 100)
+print('1000nr Stelle\t', nummber % 10000 // 1000)
+print('10000nr Stelle\t', nummber % 100000 // 10000)
+
+div = 10
+while True:
+	print(f"{div // 10} Stelle", nummber % div // (div // 10))
+	div *= 10
+	if nummber % div == nummber:
+		break

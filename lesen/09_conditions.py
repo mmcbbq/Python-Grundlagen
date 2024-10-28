@@ -47,8 +47,6 @@ elif zahl2 > zahl1 and zahl2 > zahl3:
 elif zahl3 > zahl1 and zahl3 > zahl2:
 	print("zahl3")
 
-
-
 # empty String
 print('empty String')
 if '':

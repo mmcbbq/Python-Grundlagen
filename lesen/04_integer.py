@@ -59,18 +59,18 @@ print(10 % 2)
 
 # Binäre
 binaere = 0b1010
-print(binaere)
+print('0b1010', binaere)
 dez = 256
-print(bin(dez))
+print('256', bin(dez))
 # Oktal
 oktal = 0o755
-print(oktal)
-print(oct(dez))
+print('0o755',oktal)
+print('0o755',bin(oktal))
+print('256',oct(dez))
 # Hex
 hexa = 0xfff
-print(hexa)
-print(hex(dez))
-
+print('0xfff',hexa)
+print('256',hex(dez))
 
 # and & , oder | , xor ^ , not ~
 x = 0b101010110011
@@ -83,28 +83,24 @@ print(bin(x | y))  # 111011110111
 
 print(bin(x ^ y))  # 111001100111
 
-
 # 0b101010110011
 
 print('-------------------------')
 print('~')
 
-x = 2 # 0000 0010
+x = 2  # 0000 0010
 print(bin(x))
-x =~2 # 1111 1101 -> -0b11
+x = ~2  # 1111 1101 -> -0b11
 print(bin(x))
-x -2 # 1111 0010 -> +1bit -> 00 11 -> -0b11
+x - 2  # 1111 0010 -> +1bit -> 00 11 -> -0b11
 print(bin(x))
 
-
-
-print('<<')
+print('<< >>')
 a = 0b1100
-a = a >> 1
-print(bin(a))
+a = a >> 2
+print('0b1100 >>',bin(a))
 
 b = 0b1100
 
 print(a << 3)
 print(a >> 3)
-

@@ -1,4 +1,4 @@
-# In Python gibt es keine Arrays.
+# In Python gibt es keine "Arrays".
 
 # List -> indexed array geordnet änderbar erlaubt duplicate []
 # Tuple -> indexed array geordnet nicht änderbar duplicate ()

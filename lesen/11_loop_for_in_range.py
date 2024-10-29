@@ -13,30 +13,30 @@ cd = list(range(10, -1, -1))  # Es können auch negative Argumente übergeben we
 print(cd)
 
 for x in range(10):
-	print(x)
+    print(x)
 
 # for (cd == 10 ; cd < 0 ; cd --){
 # Schleifenkörper
 # }
 
+
 for cd in range(10, -1, -1):
-	if cd == 0:
-		print('Happy new year')
-	else:
-		print(cd)
+    if cd == 0:
+        print('Happy new year')
+    else:
+        print(cd)
 z = 0
 for x in range(101):
-	if x % 5 == 0:
-		z += 1
+    if x % 5 == 0:
+        z += 1
 print(z)
-
 summe = 0
 for x in range(1, 1000):
-	summe += x
+    summe += x
 print(summe)
 
 körner = 1
 for feld in range(1, 65):
-	körner = körner * 2
+    körner = körner * 2
 print(körner)
 print(2 ** 64)

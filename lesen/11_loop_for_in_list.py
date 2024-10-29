@@ -54,14 +54,15 @@ print(sum(zahlen))
 
 # Die Liste sollte in der Schleife nicht in veraendert werden
 # Beim Hinzufügen kann es zu Unendlichkeits-Schleifen kommen
-# Beim Entfernen kommt es ueberspringen von Daten
+# Beim Entfernen kommt es zum ueberspringen von Daten
 
+# Soll alle Namen mit P am anfang entfernen
 students = ['Ahmed', 'David', 'Paul', 'PIlyas', 'Wasim', 'Ali']
 change_students = []
 for  x in students:
 	if x[0] != "P":
 		change_students.append(x)
-
+# PIlyas immer noch da
 print(change_students)
 
 

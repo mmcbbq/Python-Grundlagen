@@ -63,12 +63,11 @@ zeichen = input('Zeichen:\n')
 #     y_wert = 0
 
 
-tic[y_wert-1][x_wert-1] = zeichen
+tic[y_wert - 1][x_wert - 1] = zeichen
 print('---------------------------------------')
 print(tic[0])
 print(tic[1])
 print(tic[2])
-
 
 # Beispiel Zahl1 = 3 Zahl2 = 2 Buchstabe = p
 # 1['o', 'o', 'o']
@@ -102,3 +101,4 @@ if tic[2][0] == tic[1][1] and tic[2][0] == tic[0][2]:
     print('Sieg unten nach oben')
 else:
     print('kein Sieg')
+

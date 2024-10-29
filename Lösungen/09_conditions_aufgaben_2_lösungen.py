@@ -10,19 +10,19 @@ operator = input("Rechenart +, -, *, /")
 zahl2 = int(input("Zahl 2"))
 # #
 if operator == "+":
-	solution = zahl1 + zahl2
+    solution = zahl1 + zahl2
 
 elif operator == "-":
-	solution = zahl1 - zahl2
+    solution = zahl1 - zahl2
 
 elif operator == "*":
-	solution = zahl1 * zahl2
+    solution = zahl1 * zahl2
 
 elif operator == "/":
-	if zahl2 == 0:
-		solution = "Das kann nur Chuck Norris"
-	else:
-		solution = zahl1 / zahl2
+    if zahl2 == 0:
+        solution = "Das kann nur Chuck Norris"
+    else:
+        solution = zahl1 / zahl2
 print(solution)
 # exec("print(5 + 3)")
 
@@ -39,19 +39,19 @@ print(solution)
 uri = input(' U R I')
 uri = uri.upper()
 if uri == 'U':
-	r = float(input('R wert'))
-	i = float(input('I wert'))
-	print('U=:', r * i, 'Volt')
+    r = float(input('R wert'))
+    i = float(input('I wert'))
+    print('U=:', r * i, 'Volt')
 elif uri == 'R':
-	u = float(input('U wert'))
-	i = float(input('I wert'))
-	print('R=:', u / i, 'Ohm')
+    u = float(input('U wert'))
+    i = float(input('I wert'))
+    print('R=:', u / i, 'Ohm')
 elif uri == 'I':
-	r = float(input('R wert'))
-	u = float(input('U wert'))
-	print('I=:', u / r, 'Ampere')
+    r = float(input('R wert'))
+    u = float(input('U wert'))
+    print('I=:', u / r, 'Ampere')
 else:
-	print('Falsche Eingabe')
+    print('Falsche Eingabe')
 
 # Ein Hardware-Großhändler führt ein Rabattsystem für Stammkunden ein: Liegt der Bestellwert zwischen 0 und
 # 100 €, erhält der Kunde einen Rabatt von 10 %. Liegt der Bestellwert höher, aber insgesamt nicht über 500 €,
@@ -60,13 +60,13 @@ else:
 
 bestellwert = float(input('Bestellwert?'))
 if 0 < bestellwert <= 100:
-	print(bestellwert * 0.9)
+    print(bestellwert * 0.9)
 elif 100 < bestellwert < 500:
-	print(bestellwert * 0.85)
+    print(bestellwert * 0.85)
 elif bestellwert >= 500:
-	print(bestellwert * 0.8)
+    print(bestellwert * 0.8)
 else:
-	print('Falsche Eingabe')
+    print('Falsche Eingabe')
 
 # Der BMI berechnet sich aus dem Körpergewicht [kg] dividiert durch das Quadrat der Körpergröße [m2
 # Die Formel lautet: BMI = (Körpergewicht in kg)\ (Körpergröße in m)**2
@@ -86,47 +86,35 @@ grosse = float(input('Größe in cm'))
 geschlecht = input('Geschlecht m w')
 bmi = gewicht / (grosse / 100) ** 2
 
-
-
-
 if 30 <= bmi < 40:
-	print('Adipositas')
+    print('Adipositas')
 elif bmi >= 40:
-	print('massive Adipositas')
+    print('massive Adipositas')
 elif geschlecht == "w":
-	if bmi < 19:
-		print('Untergewicht')
-	elif 19 <= bmi < 24:
-		print('Normalgewicht')
-	elif 24 <= bmi < 30:
-		print('Übergewicht')
+    if bmi < 19:
+        print('Untergewicht')
+    elif 19 <= bmi < 24:
+        print('Normalgewicht')
+    elif 24 <= bmi < 30:
+        print('Übergewicht')
 elif geschlecht == "m":
-	if bmi < 20:
-		print('Untergewicht')
-	elif 20 <= bmi < 25:
-		print('Normalgewicht')
-	elif 25 <= bmi < 30:
-		print('Übergewicht')
-
-
-
-
-
-
-
-
+    if bmi < 20:
+        print('Untergewicht')
+    elif 20 <= bmi < 25:
+        print('Normalgewicht')
+    elif 25 <= bmi < 30:
+        print('Übergewicht')
 
 if bmi >= 40:
-	print("massive Adipositas")
+    print("massive Adipositas")
 elif bmi >= 30 and bmi < 40:
-	print('Adipositas')
+    print('Adipositas')
 elif geschlecht == "w" and bmi < 30 and bmi >= 24 or geschlecht == "m" and bmi < 30 and bmi >= 25:
-	print('Übergewicht')
+    print('Übergewicht')
 elif geschlecht == "w" and bmi < 24 and bmi >= 19 or geschlecht == "m" and bmi < 25 and bmi >= 20:
-	print('Normalgewicht')
+    print('Normalgewicht')
 elif geschlecht == "w" and bmi < 19 or geschlecht == "m" and bmi < 20:
-	print('Untergewicht')
-
+    print('Untergewicht')
 
 # Schaltjahres-Berechnung
 # Eingabe eines Jahres -> Ausgabe Schaltjahr, kein Schaltjahr
@@ -149,41 +137,38 @@ elif geschlecht == "w" and bmi < 19 or geschlecht == "m" and bmi < 20:
 jahr = int(input('Jahr'))
 
 if jahr % 4 != 0:
-	print('kein Schaltjar')
+    print('kein Schaltjar')
 elif jahr % 100 == 0:
-	if jahr % 400 == 0:
-		print('Schaltjahr')
-	else:
-		print('kein Schaltjahr')
+    if jahr % 400 == 0:
+        print('Schaltjahr')
+    else:
+        print('kein Schaltjahr')
 else:
-	print('Schaltjahr')
+    print('Schaltjahr')
 jahr = int(input("Bitte gebe das Jahr an\n"))
 if jahr % 4 == 0:
-	if jahr % 100 == 0:
-		if jahr % 400 == 0:
-			print("Schaltjahr")
-		else:
-			print("keine Schaltjahr")
-	else:
-		print("Schaltjahr")
+    if jahr % 100 == 0:
+        if jahr % 400 == 0:
+            print("Schaltjahr")
+        else:
+            print("keine Schaltjahr")
+    else:
+        print("Schaltjahr")
 else:
-	print("kein Schaltjahr")
+    print("kein Schaltjahr")
 
 years = [1720, 1972, 1980, 1700, 1800, 2100, 1600, 2000, 1200]
 for year in years:
 
+    if year % 4 != 0 or year % 100 == 0 and year % 400 != 0:
+        print('kein Schaltjahr')
+    else:
+        print(' Schaltjahr')
 
-	if year % 4 != 0 or year % 100 == 0 and year % 400 != 0:
-		print('kein Schaltjahr')
-	else:
-		print(' Schaltjahr')
-
-	if year % 4 == 0 and (year % 100 != 0 or year % 400 == 0):
-		print(' Schaltjahr  ++')
-	else:
-		print('kein Schaltjahr ++')
-
-
+    if year % 4 == 0 and (year % 100 != 0 or year % 400 == 0):
+        print(' Schaltjahr  ++')
+    else:
+        print('kein Schaltjahr ++')
 
 # Aufgabe: Berechnung der Energieverbrauchskosten
 # Erstelle ein Programm, das die monatlichen Energiekosten eines Haushalts basierend auf dem Energieverbrauch berechnet. Dabei werden unterschiedliche Preise für verschiedene Verbrauchsstufen und ein Bonus für energiesparende Haushalte berücksichtigt.
@@ -203,37 +188,21 @@ test = [149, 150, 151, 299, 300, 301, 199, 99, 100, 101]
 
 verbraucht = int(input('Verbrauch:\n'))
 if verbraucht < 0:
-	preis = 0
+    preis = 0
 elif verbraucht < 150:
-	if verbraucht <= 100:
-		preis = verbraucht * 0.3 - 10
-	else:
-		preis = (verbraucht - 100) * 0.25 + 100 * 0.3 - 10
+    if verbraucht <= 100:
+        preis = verbraucht * 0.3 - 10
+    else:
+        preis = (verbraucht - 100) * 0.25 + 100 * 0.3 - 10
 elif verbraucht >= 150:
-	if verbraucht > 300:
-		preis = (verbraucht - 300) * 0.2 + 200 * 0.25 + 100 * 0.3
-	else:
-		preis = (verbraucht - 100) * 0.25 + 100 * 0.3
+    if verbraucht > 300:
+        preis = (verbraucht - 300) * 0.2 + 200 * 0.25 + 100 * 0.3
+    else:
+        preis = (verbraucht - 100) * 0.25 + 100 * 0.3
 if preis < 0:
-	preis = 0
+    preis = 0
 print(f"preis: {preis} Euro ")
 
 preis = 0
 
-
 print("-----------------")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

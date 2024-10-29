@@ -6,7 +6,7 @@ my_string2 = 'Hello'
 
 long_string = """Hallo
 ich
-				bin 
+                bin 
 ein 
 langer 
 string"""

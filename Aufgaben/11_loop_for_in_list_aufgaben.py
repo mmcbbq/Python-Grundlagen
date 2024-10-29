@@ -12,10 +12,7 @@ user = ['Bob', 'Eve', 'Jim', 'John', 'Tim']
 # Beispiel "createuser Eve 2"
 
 
-
-
 # Es sollen nur noch User ausgegeben werden die ein "i"" in ihrem namen haben.
-
 
 
 # Tausche in jedem Namen den Buchstaben "B" gegen ein '8', 'E' gegen ein '3' 'o' gegen 0 und 'i' gegen '1' aus.
@@ -36,12 +33,15 @@ rand_zahlen = [452, 30, 688, 177, 534, 137, 490, 387, 845, 882, 896, 798, 456, 6
                244, 31, 764, 420, 797, 534, 121, 655, 427, 758, 131, 652, 440, 571, 408, 154, 138, 70, 798, 325, 584,
                718, 923, 398, 285, 342, 392, 206, 863, 266, 832, 746, 906, 180, 172, 183, 224, 207, 800, 349, 786, 554,
                305, 52, 871, 161, 364, 542, 944, 739, 1001, 154, 771, 732, 957, 590, 444, 870, 527, 394, 426, 199, 129,
-               634, 897, 899, 407, 334, 372, 489, 498, 913, 255, 684, 813, 231, 710, 628, 578, 331, 680, 468, 111, 595, 720,
+               634, 897, 899, 407, 334, 372, 489, 498, 913, 255, 684, 813, 231, 710, 628, 578, 331, 680, 468, 111, 595,
+               720,
                320, 650, 667, 635, 589, 408, 41, 770, 153, 697, 506, 573, 931, 678, 292, 915, 197, 926, 991, 937, 185,
                816, 587, 555, 341, 767, 261, 930, 950, 879, 100, 521, 853, 441, 650, 429, 196, 703, 228, 911, 902, 16,
                518, 143, 528, 106, 806, 230, 82, 548, 476, 736]
 
 # Elemente addieren: Gehe durch die Liste rand_zahlen und addiere alle Elemente [Summe]
+
+import random
 
 
 # Gib die Anzahl der Elemente aus ohne len oder andere eingebaute Funktionen
@@ -49,7 +49,11 @@ rand_zahlen = [452, 30, 688, 177, 534, 137, 490, 387, 845, 882, 896, 798, 456, 6
 
 # Größtes Element finden: Finde das größte Element in einer Liste von Zahlen.
 
-
+max_num = rand_zahlen[0]
+for x in rand_zahlen:
+    if x > max_num:
+        max_num = x
+print(max_num)
 # Ausgabe aller Elemente *2
 
 
@@ -64,8 +68,6 @@ print('________________________________________________')
 
 # Sortiere alle Zahlen aus der rand_zahlen in eine nested_list
 # nested_list = [[Zahlen 0-300],[Zahlen 301 - 600], [Zahlen 601-999]]
-
-
 
 
 mem_mom = [33, 44, 40, 52, 60, 56, 40, 52, 60, 56]
@@ -87,3 +89,21 @@ mem_mom = [33, 44, 40, 52, 60, 56, 40, 52, 60, 56]
 # Gesamt 49
 # Nachmittag 51
 # Vormittag 48
+
+
+muster = [1, 2, 3, 4, 5]
+# gib mithilfe der Liste muster das Muster aus
+print('######################')
+
+# 1   2   3   4   5
+# 2   4   6   8  10
+# 3   6   9  12  15
+# 4   8  12  16  20
+# 5  10  15  20  25
+count = 1
+for zeile in muster:
+    for spalte in muster:
+        print(spalte * count, "",end="")
+    print()
+    count += 1
+

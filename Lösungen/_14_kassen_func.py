@@ -16,6 +16,8 @@ def rueckgabe(kaufpreis, bezahlt):
 
 
 def wechsel_geld(betrag):
+	# Liste der verfügbaren Scheine und Münzen (von groß zu klein)
+
 	geld = {"500": 0, '200': 0, "100": 0, '50': 0, '20': 0, '10': 0, '5': 0, '2': 0, '1': 0, '0,50': 0, '0,20': 0,
 			'0,10': 0, '0,05': 0, '0,02': 0, '0,01': 0}
 	for key, val in geld.items():
@@ -75,7 +77,7 @@ def print_kassen(produkt_list, geld):
 	print(f'{datum_string:^45}')
 
 
-def print_kassen_txt(produkt_list, geld):
+def print_kassen_txt(produkt_list, geld_dic):
 	kasse = ''
 	kasse += f"{'Kaufland':^50}\n"
 	kasse += f"{'Berlinerstr. 120':^50}\n"
@@ -86,8 +88,8 @@ def print_kassen_txt(produkt_list, geld):
 		kasse += f'\t{x["name"]}\n'
 		kasse += f'\t{x["anzahl"]:>4} * {x["preis"]:<7.2f} {x["anzahl"] * x["preis"]:>25.2f}\n'
 	kasse += f'\t{"Summe"}{berechne_summe(produkt_list):>35.2f}\n'
-	kasse += f'\t{"Euro"} {"€":>20}{berechne_geld(geld):>15.2f}\n'
-	kasse += f'\t{"Rückgeld"}{rueckgabe(berechne_summe(produkt_list), berechne_geld(geld)):>32.2f}\n'
+	kasse += f'\t{"Euro"} {"€":>20}{berechne_geld(geld_dic):>15.2f}\n'
+	kasse += f'\t{"Rückgeld"}{rueckgabe(berechne_summe(produkt_list), berechne_geld(geld_dic)):>32.2f}\n'
 	kasse += f'\t{"Steuer %"}  {"Brutto":>7} {"Netto":>7} {"Steuer":>14}\n'
 	kasse += f'\tA 19,00% {berechen_summe_mwst(produkt_list):>8.2f} {mwst_netto(produkt_list):.2f} {steuer_betrag(berechen_summe_mwst(produkt_list), mwst_netto(produkt_list)):>15.2f}\n'
 	kasse += f'\tB 07,00% {berechen_summe_mwst(produkt_list, 7):>8.2f} {mwst_netto(produkt_list, 7):.2f} {steuer_betrag(berechen_summe_mwst(produkt_list, 7), mwst_netto(produkt_list, 7)):>15.2f}\n'

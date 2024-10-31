@@ -26,16 +26,6 @@
 
 # Füge die letzten 3 Elemente der list_copy an die super_liste an.
 
-import inspect
 
-zahl1 = 12
-zahl2 = zahl1
-
-array1 = [1,2,3]
-array2 = array1
-print(inspect.getmembers(array1))
-
-
-nummber = 349872390486783459067823459086
 
 

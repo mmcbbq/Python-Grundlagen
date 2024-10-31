@@ -45,6 +45,7 @@ my_dict = {'A': 1, 'B': 2, 'C': 3}
 # Schreibe eine Schleife, die das maximale Ergebnis für jeden Schüler aus dem Dictionary student_scores ausgibt.
 # Schreibe eine Schleife, die das minimale Ergebnis für jeden Schüler aus dem Dictionary student_scores ausgibt.
 
+
 # Alice min:70 max:90
 # Bob min:75 max:88
 # Charlie min:82 max:95

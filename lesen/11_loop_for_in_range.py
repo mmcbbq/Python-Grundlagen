@@ -15,7 +15,8 @@ print(cd)
 for x in range(10):
     print(x)
 
-# for (cd == 10 ; cd < 0 ; cd --){
+#     (start,    stop,    schrittweite)
+# for (cd = 10 ; cd < 0 ; cd --){  <-- Schleifenkopf
 # Schleifenkörper
 # }
 
@@ -26,6 +27,8 @@ for cd in range(10, -1, -1):
     else:
         print(cd)
 z = 0
+
+
 for x in range(101):
     if x % 5 == 0:
         z += 1

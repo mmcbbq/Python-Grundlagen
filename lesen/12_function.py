@@ -51,7 +51,7 @@
 # gefolgt von einem aussagekräftigen Funktionsnamen
 # und abschliessen ()
 def sag_hallo():
-	print('Hallo')  # Der Funktionskörper wird mit einrückungen definiert. Er wird erst beim Aufruf ausgeführt.
+    print('Hallo')  # Der Funktionskörper wird mit einrückungen definiert. Er wird erst beim Aufruf ausgeführt.
 
 
 sag_hallo()  # Der Funktionsaufruf erfolgt über den Namen der Funktion mit ()
@@ -69,7 +69,7 @@ sag_hallo()  # Der Funktionsaufruf erfolgt über den Namen der Funktion mit ()
 # die in der Funktionsdefinition verwendet werden,
 # um Werte zu akzeptieren, die der Funktion übergeben werden sollen.
 def sag_hallo_mit_namen(name):
-	print('Hallo ', name)
+    print('Hallo ', name)
 
 
 # Bei dem Funktionsaufruf müssen die Parameter mit tatsächlichen Werten gefühlt werden.
@@ -86,8 +86,8 @@ sag_hallo_mit_namen('Bob')  # Das Argument 'Bob' wird bei dem Funktionsaufruf de
 
 # man kann Beliebig viele Parameter festlegen
 def my_sum(a: str, b: int) -> None:
-	"""super summer"""
-	print(a + b)
+    """super summer"""
+    print(a * b)
 
 
 # Bei dem Aufruf der Funktion werden die Argumente in der reihenfolge nach übergeben
@@ -97,19 +97,19 @@ my_sum(8, 9)
 
 # Funktionen können Rückgabewerte enthalten. return value.
 def my_sum_return(a, b):
-	summe = a + b
-	return summe
+    summe = a + b
+    return summe
 
 
 # Diese return values werden bei dem Ausführen des Programmes an die Stelle gesetzt an dem die Funktion aufgerufen wird
 
-var_my = my_sum_return(8, 10)  # ->18
+var_my = my_sum_return(my_sum_return(1,2), 10)  # ->18
 # var_my = 18
 print(var_my)
 
 
 def my_string():
-	return 'Hallo'
+    return 'Hallo'
 
 
 # Return values haben dieselben eigenschaften wie die Datentypen die sie repräsentieren
@@ -121,8 +121,8 @@ print(my_string()[0:3])
 
 
 def print_liste(liste):
-	for x in liste:
-		print(x)
+    for x in liste:
+        print(x)
 
 
 my_liste = ['Hallo', 1, True, 'Bob', 12.456]
@@ -132,12 +132,12 @@ print_liste(my_liste)
 
 # Funktionen akzeptieren nicht nur Feste Werte sonder auch Variablen oder andere Funktionen als Argumente
 def bigger(zahl1, zahl2):
-	if zahl1 > zahl2:
-		return zahl1
-	elif zahl1 < zahl2:
-		return zahl2
-	else:
-		return print('sind gleich')
+    if zahl1 > zahl2:
+        return zahl1
+    elif zahl1 < zahl2:
+        return zahl2
+    else:
+        return print('sind gleich')
 
 
 z1 = 5
@@ -146,7 +146,7 @@ print(bigger(z1, z2))
 
 
 def mal_5(a):
-	return a * 5
+    return a * 5
 
 
 print(bigger(mal_5(z1), z2))
@@ -156,17 +156,17 @@ print(bigger(mal_5(z1), z2))
 # None ist ein eigener Datentyp in Python
 
 def no_return():
-	test = 5 * 20
+    test = 5 * 20
 
 
 print(no_return())  # -> None
 
 
 def check_list(liste):
-	for x in liste:
-		if x == 1:
-			return f'{x} ist da'
-		print(x)
+    for x in liste:
+        if x == 1:
+            return f'{x} ist da'
+        print(x)
 
 
 my_liste = [5, 8, 1, 2, 6, 8, 1]
@@ -178,7 +178,7 @@ print(check_list(my_liste))
 # Man kann beliebig viele Parameter festlegen
 
 def sag_name(vorname, nachname):
-	print(vorname, nachname)
+    print(vorname, nachname)
 
 
 sag_name('Bob', 'Bobson')
@@ -186,7 +186,7 @@ sag_name('Bobson', 'Bob')
 
 
 def div(x, y=2):  # Wir ein default value für y definiert
-	return x / y
+    return x / y
 
 
 print(div(10))  # Bei dem Aufruf der Funktion muss dieser nicht als Argument übergeben werden x = 10 y = 2
@@ -204,7 +204,7 @@ print(div(y=3, x=15))
 # print(div(x=20 , 23)) -> positional argument follows keyword argument
 
 def my_func_pkd(x, y, z=100):
-	return x + y + z
+    return x + y + z
 
 
 print(my_func_pkd(100, z=120, y=50))
@@ -216,10 +216,10 @@ print(my_func_pkd(100, z=120, y=50))
 # keyword arguments nur nach dem * e
 
 def boo(a, b, /, c, d, *, e=100):
-	print(f"a:{a}")
-	print(f"b:{b}")
-	print(f"c:{c}")
-	print(f"e:{e}")
+    print(f"a:{a}")
+    print(f"b:{b}")
+    print(f"c:{c}")
+    print(f"e:{e}")
 
 
 boo(1, 2, c=3, d=5)
@@ -233,10 +233,10 @@ boo(1, 2, 3, 4, e=10)
 # Wenn man eine vorher unbestimmte Zahl von Parametern uebergeben will, kann man dies mit *param
 # Diese Parameter werden in ein tuple gepackt
 def keineplan(*viele_oder_eins, key) -> str:
-	print(type(viele_oder_eins))
-	print(viele_oder_eins)
-	print(key)
-	return "test"
+    print(type(viele_oder_eins))
+    print(viele_oder_eins)
+    print(key)
+    return "test"
 
 
 keineplan(1, 2, 3, 4, "test", 9, key=12)

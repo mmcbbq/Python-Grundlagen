@@ -8,10 +8,7 @@
 #       |     |
 # 1  -  |  -  |  -
 #       |     |
-spielfeld = [['-', '-', '-'], ['-', '-', '-'], ['-', '-', '-']]
-spieler = [{'name': input(('name spieler 1')), 'zeichen': input("zeichen spieler 1")},
-           {'name': input(('name spieler 2')), 'zeichen': input("zeichen spieler 2")}]
-aktueller_spieler = spieler[1]
+
 
 
 def show_game(field: list) -> None:
@@ -78,11 +75,18 @@ def switch_player(player_now: dict, player: dict) -> dict:
         return player[0]
 
 
+spielfeld = [['-', '-', '-'], ['-', '-', '-'], ['-', '-', '-']]
+spieler = [{'name': input(('name spieler 1')), 'zeichen': input("zeichen spieler 1")},
+           {'name': input(('name spieler 2')), 'zeichen': input("zeichen spieler 2")}]
+aktueller_spieler = spieler[1]
+
+
 gewonnen = False
 show_game(spielfeld)
 while not gewonnen:
     print(f'Spieler {aktueller_spieler["name"]} ist am Zug')
     move = ask_move()
+
     while not check_move(move, spielfeld):
         print("Das geht nicht")
         move = ask_move()

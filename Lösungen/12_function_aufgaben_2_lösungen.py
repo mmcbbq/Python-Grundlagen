@@ -3,14 +3,14 @@
 zahlen = [10, 20, 30, 40, 50]
 
 
-def get_durchschnitt(liste):
-	summe = 0
-	z = 0
-	for x in liste:
-		summe += x
-		z += 1
-	d = summe / z
-	return d
+def get_durchschnitt(liste: list[int]) -> float:
+    summe = 0
+    z = 0
+    for x in liste:
+        summe += x
+        z += 1
+    d = summe / z
+    return d
 
 
 print(get_durchschnitt(zahlen))
@@ -19,14 +19,14 @@ print(get_durchschnitt(zahlen))
 # Schreibe eine Funktion 'get_durchschnitt_unbekannt', die eine unbestimmte Anzahl von Parametern  von Zahlen erhaelt
 # und den Durchschnitt dieser Parameter returned
 
-def get_durchschnitt_unbekannt(*zahlen):
-	summe = 0
-	z = 0
-	for x in zahlen:
-		summe += x
-		z += 1
-	d = summe / z
-	return d
+def get_durchschnitt_unbekannt(*zahlen: int) -> float:
+    summe = 0
+    z = 0
+    for x in zahlen:
+        summe += x
+        z += 1
+    d = summe / z
+    return d
 
 
 print(get_durchschnitt_unbekannt(10, 20, 30, 40, 50, 24, 24, 446, 7, 8, 9, 3))
@@ -36,11 +36,11 @@ print(get_durchschnitt_unbekannt(10, 20, 30, 40, 50, 24, 24, 446, 7, 8, 9, 3))
 zahlen = [2, 4, 6, 8, 10]  # -> # Sollte [4, 16, 36, 64, 100] ergeben
 
 
-def quadrat_list(liste):
-	q_liste = []
-	for x in liste:
-		q_liste.append(x ** 2)
-	return q_liste
+def quadrat_list(liste: list[int]) -> list[int]:
+    q_liste = []
+    for x in liste:
+        q_liste.append(x ** 2)
+    return q_liste
 
 
 print(quadrat_list(zahlen))
@@ -48,11 +48,11 @@ print(quadrat_list(zahlen))
 
 # Schreibe eine Funktion, die eine unbestimmte Anzahl von Parametern von Zahlen nimmt
 # und eine Liste mit den Quadraten dieser Zahlen zurückgibt
-def quadrat_list_unbekannt(*liste):
-	q_liste = []
-	for x in liste:
-		q_liste.append(x ** 2)
-	return q_liste
+def quadrat_list_unbekannt(*liste: int) -> list[int]:
+    q_liste = []
+    for x in liste:
+        q_liste.append(x ** 2)
+    return q_liste
 
 
 print(quadrat_list_unbekannt(2, 4, 6, 8, 10))
@@ -64,15 +64,15 @@ print(quadrat_list_unbekannt(2, 4, 6, 8, 10))
 # return [ min ,max]
 # def min_max(liste):
 # 	return [min(liste),max(liste)]
-def min_max(liste):
-	min_wert = liste[0]
-	max_wert = liste[0]
-	for x in liste:
-		if x > max_wert:
-			max_wert = x
-		if x < min_wert:
-			min_wert = x
-	return [min_wert, max_wert]
+def min_max(liste: list[int]) -> list[int]:
+    min_wert = liste[0]
+    max_wert = liste[0]
+    for x in liste:
+        if x > max_wert:
+            max_wert = x
+        if x < min_wert:
+            min_wert = x
+    return [min_wert, max_wert]
 
 
 print(min_max(zahlen))
@@ -87,22 +87,22 @@ spielfeld = [["-", "-", "-"], ["-", "-", "-"], ["-", "-", "-"]]
 # [x, x, x]
 # [-, o, o]
 # [o, -, o]
-def sieg_w(feld):
-	for inner_list in feld:
-		if inner_list[0] == inner_list[1] and inner_list[0] == inner_list[2] and inner_list[0] != '-':
-			return True
-	return False
+def sieg_w(feld: list[list]) -> bool:
+    for inner_list in feld:
+        if inner_list[0] == inner_list[1] and inner_list[0] == inner_list[2] and inner_list[0] != '-':
+            return True
+    return False
 
 
 # senkrechter Sieg
 # [x, x, o]
 # [-, o, o]
 # [o, -, o]
-def sieg_s(feld):
-	for x in range(3):
-		if feld[0][x] == feld[1][x] and feld[0][x] == feld[2][x] and feld[0][x] != "-":
-			return True
-	return False
+def sieg_s(feld: list[list]) -> bool:
+    for x in range(3):
+        if feld[0][x] == feld[1][x] and feld[0][x] == feld[2][x] and feld[0][x] != "-":
+            return True
+    return False
 
 
 # diagonaler Sieg oben links nach unten Rechts
@@ -110,78 +110,83 @@ def sieg_s(feld):
 # [-, o, o]
 # [o, -, o]
 
-def sieg_dlr(feld):
-	if feld[0][0] == feld[1][1] and feld[0][0] == feld[2][2] and feld[0][0] != "-":
-		return True
-	return False
+def sieg_dlr(feld: list[list]) -> bool:
+    if feld[0][0] == feld[1][1] and feld[0][0] == feld[2][2] and feld[0][0] != "-":
+        return True
+    return False
 
 
 # diagonaler Sieg unten links nach oben Rechts
 # [x, x, o]
 # [-, o, o]
 # [o, -, o]
-def sieg_drl(feld):
-	if feld[0][2] == feld[1][1] and feld[0][2] == feld[2][0] and feld[1][1] != "-":
-		return True
-	return False
+def sieg_drl(feld: list[list]) -> bool:
+    if feld[0][2] == feld[1][1] and feld[0][2] == feld[2][0] and feld[1][1] != "-":
+        return True
+    return False
 
 
 # Test
 spielstande = [
-	[['x', 'x', 'x'], ['-', 'o', 'o'], ['o', '-', 'o']],
-	[["-", "-", "-"], ["-", "-", "-"], ["-", "-", "-"]],
-	[['x', 'o', 'x'], ['-', 'o', 'o'], ['i', 'o', 'o']],
-	[['o', 'o', 'x'], ['-', 'o', 'o'], ['i', '-', 'o']],
-	[['x', 'o', 'x'], ['-', 'x', 'o'], ['x', 'o', 'o']]
+    [['x', 'x', 'x'], ['-', 'o', 'o'], ['o', '-', 'o']],
+    [["-", "-", "-"], ["-", "-", "-"], ["-", "-", "-"]],
+    [['x', 'o', 'x'], ['-', 'o', 'o'], ['i', 'o', 'o']],
+    [['o', 'o', 'x'], ['-', 'o', 'o'], ['i', '-', 'o']],
+    [['x', 'o', 'x'], ['-', 'x', 'o'], ['x', 'o', 'o']]
 ]
 for spielstand in spielstande:
-	if sieg_drl(spielstand):
-		print('sieg')
-		print(spielstand)
-	else:
-		print('kein sieg')
+    if sieg_drl(spielstand):
+        print('sieg')
+        print(spielstand)
+    else:
+        print('kein sieg')
 
 
 # Schreibe eine Funktion, die überprüft,
 # ob ein gegebener Text ein Palindrom ist
 # (d.h., vorwärts und rückwärts gelesen dasselbe ist
 
-def check_palindrom(word):
-	drow = ""
-	word = word.lower()
-	for buchstabe in range(len(word)):
-		word[len(word) - 1]
-		drow += word[len(word) - 1 - buchstabe]
-	return drow == word
+def check_palindrom(word: str) -> bool:
+    drow = ""
+    word = word.lower()
+    for buchstabe in range(len(word)):
+        word[len(word) - 1]
+        drow += word[len(word) - 1 - buchstabe]
+    return drow == word
 
 
 print(check_palindrom("anhna"))
 
 
-def check_palindrom2(word):
-	for b in range(len(word)):
-		if word[b] != word[-1 - b]:
-			return False
-	return True
+def check_palindrom2(word: str) -> bool:
+    for b in range(len(word)):
+        if word[b] != word[-1 - b]:
+            return False
+    return True
 
 
 print(check_palindrom2('anhna'))
 
 #  Alte Loesungen
-
+#     _    _ _         _    _   _
+#    / \  | | |_ ___  | |  (_)_(_)___ _   _ _ __   __ _
+#   / _ \ | | __/ _ \ | |   / _ \/ __| | | | '_ \ / _` |
+#  / ___ \| | ||  __/ | |__| (_) \__ \ |_| | | | | (_| |
+# /_/   \_\_|\__\___| |_____\___/|___/\__,_|_| |_|\__, |
+#                                                 |___/
 
 # Schreibe eine Funktion, die den Durchschnitt einer Liste von Zahlen berechnet
 zahlen = [10, 20, 30, 40, 50]
 
 
 def get_durchschnitt(liste):
-	summe = 0
-	zaehler = 0
-	for x in liste:
-		summe += x
-		zaehler += 1
-	durchschnitt = summe / zaehler
-	return durchschnitt
+    summe = 0
+    zaehler = 0
+    for x in liste:
+        summe += x
+        zaehler += 1
+    durchschnitt = summe / zaehler
+    return durchschnitt
 
 
 # Mit Python functions
@@ -195,10 +200,10 @@ zahlen = [2, 4, 6, 8, 10]  # -> # Sollte [4, 16, 36, 64, 100] ergeben
 
 
 def liste_to_quadrat_liste(liste):
-	quadrat_liste = []
-	for zahl in liste:
-		quadrat_liste.append(zahl ** 2)
-	return quadrat_liste
+    quadrat_liste = []
+    for zahl in liste:
+        quadrat_liste.append(zahl ** 2)
+    return quadrat_liste
 
 
 print(liste_to_quadrat_liste(zahlen))
@@ -214,14 +219,14 @@ print(liste_to_quadrat_liste(zahlen))
 # 	return [min_wert, max_wert]
 
 def min_max_liste(liste):
-	min_wert = liste[0]
-	max_wert = liste[0]
-	for zahl in liste:
-		if min_wert > zahl:
-			min_wert = zahl
-		if max_wert < zahl:
-			max_wert = zahl
-	return [min_wert, max_wert]
+    min_wert = liste[0]
+    max_wert = liste[0]
+    for zahl in liste:
+        if min_wert > zahl:
+            min_wert = zahl
+        if max_wert < zahl:
+            max_wert = zahl
+    return [min_wert, max_wert]
 
 
 print(min_max_liste(zahlen))
@@ -233,10 +238,10 @@ spielfeld = [['-', '-', '-'], ['-', '-', '-'], ['-', '-', '-']]
 
 
 def sieg_waage(nested_list):
-	for liste in nested_list:
-		if liste[0] == liste[1] and liste[0] == liste[2] and liste[0] != '-':
-			return True
-	return False
+    for liste in nested_list:
+        if liste[0] == liste[1] and liste[0] == liste[2] and liste[0] != '-':
+            return True
+    return False
 
 
 # [x, x, x]
@@ -248,45 +253,48 @@ spielfeld = [['x', True, 'x'], [True, True, 'x'], [True, True, 'x']]
 
 # senkrechter Sieg
 def sieg_senk(nested_list):
-	for x in range(3):
-		if nested_list[0][x] == nested_list[1][x] == nested_list[2][x] != '-':
-			return True
-	return False
+    for x in range(3):
+        if nested_list[0][x] == nested_list[1][x] == nested_list[2][x] != '-':
+            return True
+    return False
 
 
 def sieg_diag_ol_ur(nested_list):
-	if nested_list[0][0] == nested_list[1][1] == nested_list[2][2] and nested_list[0][2] != "-":
-		return True
-	else:
-		return False
+    if nested_list[0][0] == nested_list[1][1] == nested_list[2][2] and nested_list[0][2] != "-":
+        return True
+    else:
+        return False
 
 
 def sieg_diag_or_ul(nested_list):
-	if nested_list[0][2] == nested_list[1][1] == nested_list[2][0] and nested_list[0][2] != "-":
-		return True
-	else:
-		return False
+    if nested_list[0][2] == nested_list[1][1] == nested_list[2][0] and nested_list[0][2] != "-":
+        return True
+    else:
+        return False
 
 
 spielfeld = [['o', '-', 'o'], ['o', '', '-'], ['o', 'o', 'o']]
 for x in spielfeld:
-	print(x)
+    print(x)
 print(sieg_waage(spielfeld))
 print(sieg_senk(spielfeld))
 print(sieg_diag_ol_ur(spielfeld))
 print(sieg_diag_or_ul(spielfeld))
+
 
 # Schreibe eine Funktion, die überprüft,
 # ob ein gegebener Text ein Palindrom ist
 # (d.h., vorwärts und rückwärts gelesen dasselbe ist
 
 def palindrom(string):
-	for x in range(len(string)//2):
-		if pal[x] == pal[len(string)-1-x]:
-			continue
-		else:
-			return False
-	return True
+    for x in range(len(string) // 2):
+        if pal[x] == pal[len(string) - 1 - x]:
+            continue
+        else:
+            return False
+    return True
+
+
 pal = 'Erika feuert nur untreue Fakire'.replace(' ', '')
 # def palindrom(string):
 # 	re_string = string[::-1]

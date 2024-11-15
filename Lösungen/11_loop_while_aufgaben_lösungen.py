@@ -46,6 +46,7 @@ import random
 zufall_zahl = random.randint(1, 100)
 print(zufall_zahl)
 versuche = 10
+fver = []
 nicht_richtig = True
 
 while nicht_richtig:
@@ -62,7 +63,8 @@ while nicht_richtig:
 	if versuche == 0:
 		print('Keine Versuche mehr')
 		break
-	print('Du hast noch ',versuche)
+	fver.append(ant)
+	print('Du hast noch ',versuche, fver)
 print('Die Zahl war ', zufall_zahl)
 
 

@@ -45,7 +45,7 @@ print(wort)
 bob_autos = 1
 bob_autos = bob_autos + 1
 
-bob_autos += 1  # Das ist die kurz Schreibweise für Zeile 49
+bob_autos += 1  # Das ist die kurz Schreibweise für Zeile 46
 
 # Man kann alle anderen mathematische Operationen verwenden
 bob_autos -= 1

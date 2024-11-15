@@ -119,7 +119,7 @@ def print_kassenzettel(prod_liste: list, geld_dic: dict) -> str:
     kasse += '\n'
     kasse += f'{datum_string:^50}\n'
     return kasse
-    pass
+
 
 
 def wechsel_geld(rueckgeld: float) -> dict:

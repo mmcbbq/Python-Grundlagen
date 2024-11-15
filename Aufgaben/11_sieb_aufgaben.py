@@ -16,6 +16,7 @@
 # bis man am Ende der Liste angekommen ist.
 # Im Verlauf, des Verfahren werden alle Primzahlen ausgegeben.
 import timeit
+
 start = timeit.default_timer()
 
 # primzahlen_kandidaten = [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27,
@@ -27,14 +28,14 @@ start = timeit.default_timer()
 # 						 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100]
 primzahlen_kandidaten = []
 for x in range(2, 101):
-	primzahlen_kandidaten.append(x)
+    primzahlen_kandidaten.append(x)
 
 for primzahl in primzahlen_kandidaten:
-	if primzahl == len(primzahlen_kandidaten) ** (1 / 2):
-		break
-	for kandidaten in primzahlen_kandidaten:
-		if kandidaten % primzahl == 0 and kandidaten != primzahl:
-			primzahlen_kandidaten.remove(kandidaten)
+    if primzahl == len(primzahlen_kandidaten) ** (1 / 2):
+        break
+    for kandidaten in primzahlen_kandidaten:
+        if kandidaten % primzahl == 0 and kandidaten != primzahl:
+            primzahlen_kandidaten.remove(kandidaten)
 print(len(primzahlen_kandidaten))
 print(primzahlen_kandidaten)
 
@@ -42,10 +43,22 @@ stop = timeit.default_timer()
 
 print('Time: ', stop - start)
 
+import matplotlib.pyplot as plt
+import numpy as np
 
+tiere = ('Katzen', 'Hunde', 'Kleintiere', 'Ziervögel')
+anzahl = [15.7, 10.7, 5, 3.5]
 
+y_pos = np.arange(len(tiere))
 
-
-
-
-
+plt.bar(y_pos, anzahl, align='center')
+plt.xticks(y_pos, tiere)
+plt.ylabel('Anzahl in Millionen')
+plt.title('Haustiere in Deutschland (2020)')
+# Striche auf x-Achse ausschalten
+plt.tick_params(
+    axis='x',
+    which='both',  # major und minor ticks
+    bottom=False  # ticks auf der x-Achse (unten)
+)
+plt.show()

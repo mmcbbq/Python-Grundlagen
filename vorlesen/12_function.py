@@ -5,7 +5,7 @@
 # Vorteile von Funktionen beim Programmieren
 #
 # Lesbarkeit und Wartbarkeit:
-# Funktionen sind oft leichter zu lesen und zu verstehen als einzelne Codeblöcke.
+# Funktionen sind oft leichter zu vorlesen und zu verstehen als einzelne Codeblöcke.
 # Dies liegt daran, dass sie eine einzelne Aufgabe erledigen
 # und klare Grenzen haben. Funktionen sind auch leichter zu warten,
 # da Änderungen an einer Funktion nur Auswirkungen auf den Code haben,

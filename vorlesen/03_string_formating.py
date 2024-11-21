@@ -17,4 +17,4 @@ print(f'Ich bin {80 == alter} Jahre alt')
 
 zahl = 1010025562002.536895514
 print(f'Die Zahl ist {zahl:.2f}')
-
+#links center left space

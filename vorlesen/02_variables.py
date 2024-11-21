@@ -32,7 +32,7 @@ print(name1)
 # Variablen kann man überschreiben
 name = "Tim"
 name = "Bob"
-print(name1)
+print(name)
 
 # Bei der Zuweisung von Variablen kann ich mathematische Operationen durchführen
 # ebenso können bei der Zuweisung Variablen verwendet werden
@@ -68,7 +68,7 @@ b = zwisch
 print(a, b)
 # Ohne Zwischenspeicher mit xor
 a = 5  #
-b = 7  #
+b = 3 #
 a = a ^ b  # a =  a^b
 b = a ^ b  # b = (a^b) ^ b = a_vorher
 a = a ^ b  # a = (a^b) ^ a = b_vorher

@@ -4,7 +4,7 @@ wahr = True
 falsch = False
 
 # Vergleich Operatoren
-# ==
+#
 print("==")
 print('----------------------------------------')
 print(15 == 15)  # True

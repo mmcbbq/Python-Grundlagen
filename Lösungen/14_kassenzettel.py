@@ -44,7 +44,7 @@ def produkt_kaufpreis(prod_dic: dict) -> float:
     return round(prod_dic['anzahl'] * prod_dic['preis'], 2)
 
 
-def summe_kaufpreis(prod_list: list) -> float:
+def summe_kaufpreis(prod_list: list[dict]) -> float:
     summe = 0
     for prod_dic in prod_list:
         summe += produkt_kaufpreis(prod_dic)
@@ -65,6 +65,11 @@ def brutto_mwst_7(prod_list: list) -> float:
         if produkt['mwst'] == 7:
             summe += produkt['preis'] * produkt['anzahl']
     return round(summe, 2)
+
+
+
+
+
 
 
 def netto_mwst_19(prod_list: list) -> float:

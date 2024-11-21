@@ -35,7 +35,7 @@ print("Das", "\tist", "\tein", "\ttab")
 # Default ist sep=" "
 print("Das", "ist")
 print("Das", "ist", sep="+++")
-print("Hallo mein Name", "ist", "Bob", sep="***")
+print("Hallo mein Name", "ist", "Bob", sep="***", end='+++')
 
 # Das Keyword argument end definiert die Zeichen am Ende der print Funktion
 # Default ist end="\n".

@@ -64,15 +64,15 @@ dez = 256
 print('256', bin(dez))
 # Oktal
 oktal = 0o755
-print('0o755',oktal)
-print('0o755',bin(oktal))
-print('256',oct(dez))
+print('0o755', oktal)
+print('0o755', bin(oktal))
+print('256', oct(dez))
 # Hex
 hexa = 0xfff
-print('0xfff',hexa)
-print('256',hex(dez))
+print('0xfff', hexa)
+print('256', hex(dez))
 
-# and & , oder | , xor ^ , not ~
+
 x = 0b101010110011
 y = 0b010011010100
 print('-------------------------------------------')
@@ -98,9 +98,11 @@ print(bin(x))
 print('<< >>')
 a = 0b1100
 a = a >> 2
-print('0b1100 >>',bin(a))
+print('0b1100 >>', bin(a))
 
 b = 0b1100
 
 print(a << 3)
 print(a >> 3)
+
+

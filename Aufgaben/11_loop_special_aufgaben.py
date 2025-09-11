@@ -12,7 +12,7 @@
 #
 # x = (x + w/x)/2
 #
-# Wiederhole  mit den jeweils neuen Näherungswerten x bis die gewünschte Genauigkeit erreicht ist.
+# Wiederhole mit den jeweils neuen Näherungswerten x bis die gewünschte Genauigkeit erreicht ist.
 # Die Grundidee für dieses Verfahren basiert auf der Frage, wie ein Rechteck in ein flächengleiches Quadrat
 # umgewandelt werden kann … dafür wird die Seitenlänge des Quadrats benötigt.
 

@@ -10,3 +10,5 @@
 # Drucke alle Schlüssel in my_dict aus.
 # Drucke alle Werte in my_dict aus.
 # Drucke alle Schlüssel-Wert-Paare in my_dict aus
+
+

@@ -5,7 +5,7 @@ my_string2 = 'Hello'
 # Einen mehr Zeiliger String kann man mit ''' oder """ erstellen
 
 long_string = """Hallo
-ich
+ich`    
                 bin 
 ein 
 langer 

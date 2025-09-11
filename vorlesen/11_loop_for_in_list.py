@@ -59,11 +59,12 @@ print(sum(zahlen))
 # Soll alle Namen mit P am anfang entfernen
 students = ['Ahmed', 'David', 'Paul', 'PIlyas', 'Wasim', 'Ali']
 change_students = []
-for  x in students:
+for x in students:
 	if x[0] != "P":
-		change_students.append(x)
+		students.remove(x)
+		# change_students.append(x)
 # PIlyas immer noch da
-print(change_students)
+print(students)
 
 
 

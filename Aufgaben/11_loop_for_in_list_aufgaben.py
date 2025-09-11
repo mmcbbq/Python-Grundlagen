@@ -49,11 +49,7 @@ import random
 
 # Größtes Element finden: Finde das größte Element in einer Liste von Zahlen.
 
-max_num = rand_zahlen[0]
-for x in rand_zahlen:
-    if x > max_num:
-        max_num = x
-print(max_num)
+
 # Ausgabe aller Elemente *2
 
 
@@ -100,10 +96,5 @@ print('######################')
 # 3   6   9  12  15
 # 4   8  12  16  20
 # 5  10  15  20  25
-count = 1
-for zeile in muster:
-    for spalte in muster:
-        print(spalte * count, "",end="")
-    print()
-    count += 1
+
 

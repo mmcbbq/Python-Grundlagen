@@ -2,7 +2,7 @@ def show_game(field):
 	print(field[2])
 	print(field[1])
 	print(field[0])
-
+issubclass()
 
 def ask_move():
 	x = int(input("x: 123"))

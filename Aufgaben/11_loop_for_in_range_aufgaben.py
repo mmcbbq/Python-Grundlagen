@@ -11,7 +11,6 @@ print('#######################')
 print('Aufgabe 2')
 print('#######################')
 
-
 # Schreib eine Schleife die folgendes Muster ausgibt
 # *****
 # ****
@@ -121,8 +120,6 @@ print('#######################')
 print('Aufgabe 8')
 print('#######################')
 
-
-
 print('Aufgabe 9')
 print('#######################')
 
@@ -135,5 +132,3 @@ print('#######################')
 # XOXOXOXO
 # OXOXOXOX
 # XOXOXOXO
-
-

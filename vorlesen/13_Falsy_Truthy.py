@@ -4,7 +4,7 @@ falsy = {
 	'dictionaries': {},
 	'tuples': (),
 	'sets': set(),
-	'strings': ' ',
+	'strings': '',
 	'integer': 0,
 	'floats': 0.0,
 	'none': None,

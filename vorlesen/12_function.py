@@ -47,7 +47,7 @@
 # min()
 
 # Um eine Funktion zu definieren, fängt man mit dem "def" Keyword an
-# In anderen Programmiersprachen function oder int
+# In anderen Programmiersprachen function
 # gefolgt von einem aussagekräftigen Funktionsnamen
 # und abschliessen ()
 def sag_hallo():

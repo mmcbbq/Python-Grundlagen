@@ -32,16 +32,5 @@ students = ['Ali', 'Mehmet', 'Ali', 'Philipp', 'Sven', 'Alexander', 'Matrix', 'M
             'Darius', 'Elsa', 'Coskun', 'Grigorius', 'Kaycee', 'Carsten', 'Bader', 'Athanasios']
 # Zaehle alle "a" in den Namen (case-insensitive)
 # Zaehle alle "m" in den Namen
-count_a = 0
-count_m = 0
-for name in students:
-    for buchstabe in name:
-        if buchstabe.lower() == "a":
-            count_a = count_a + 1
-        elif buchstabe == 'm':
-            # print(buchstabe)
-            count_m = count_m + 1
 
-print(count_a)
-print(count_m)
 

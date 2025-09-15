@@ -54,7 +54,7 @@ my_dict = {'A': 1, 'B': 2, 'C': 3}
 # Schreibe eine Schleife, die den Namen des Schülers mit dem höchsten Durchschnitt aus dem Dictionary student_scores ausgibt.
 #Der beste student ist Charlie mit einem durschnitt von 88.33
 
-# Gegeben ist das folgende Dictionary .
+# Gegeben ist das folgende Dictionary.
 fruits = {'Apfel': {'bestand': 100, 'verkauft': 20, 'preis': 0.25, 'lager kapazität': 200},
           'Banane': {'bestand': 78, 'verkauft': 42, 'preis': 0.12, 'lager kapazität': 100},
           'Orange': {'bestand': 24, 'verkauft': 11, 'preis': 0.39, 'lager kapazität': 100}

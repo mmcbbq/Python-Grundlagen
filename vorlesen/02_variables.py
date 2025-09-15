@@ -68,7 +68,7 @@ b = zwisch
 print(a, b)
 # Ohne Zwischenspeicher mit xor
 a = 5  # 0101
-b = 3 # 0011          0110
+b = 3 # 0011
 a = a ^ b  # a =  a^b
 b = a ^ b  # b = (a^b) ^ b = a_vorher
 a = a ^ b  # a = (a^b) ^ a = b_vorher

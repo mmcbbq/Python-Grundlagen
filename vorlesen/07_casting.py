@@ -16,7 +16,7 @@ print()
 print()
 print()
 
-zahl = "15"
+zahl = "aasd"
 print('String: ', type(zahl), zahl)
 print(zahl * 3)
 zahl = int(zahl)

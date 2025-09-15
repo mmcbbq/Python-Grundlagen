@@ -26,3 +26,63 @@ start = timeit.default_timer()
 # 						 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83,
 # 						 84, 85, 86, 87,
 # 						 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100]
+primzahlen_kandidaten = []
+for x in range(2, 101):
+    primzahlen_kandidaten.append(x)
+
+for primzahl in primzahlen_kandidaten:
+    if primzahl == len(primzahlen_kandidaten) ** (1 / 2):
+        break
+    for kandidaten in primzahlen_kandidaten:
+        if kandidaten % primzahl == 0 and kandidaten != primzahl:
+            primzahlen_kandidaten.remove(kandidaten)
+print(len(primzahlen_kandidaten))
+print(primzahlen_kandidaten)
+
+stop = timeit.default_timer()
+
+print('Time: ', stop - start)
+
+import matplotlib.pyplot as plt
+import numpy as np
+
+tiere = ('Katzen', 'Hunde', 'Kleintiere', 'Ziervögel')
+anzahl = [15.7, 10.7, 5, 3.5]
+
+y_pos = np.arange(len(tiere))
+
+plt.bar(y_pos, anzahl, align='center')
+plt.xticks(y_pos, tiere)
+plt.ylabel('Anzahl in Millionen')
+plt.title('Haustiere in Deutschland (2020)')
+# Striche auf x-Achse ausschalten
+plt.tick_params(
+    axis='x',
+    which='both',  # major und minor ticks
+    bottom=False  # ticks auf der x-Achse (unten)
+)
+plt.show()
+import timeit
+from math import sqrt
+
+start = timeit.default_timer()
+
+primzahl_kandidaten = [True] * 101
+primzahl_kandidaten[0], primzahl_kandidaten[1] = False, False
+i = 0
+for primzahl in range(0, int(sqrt(len(primzahl_kandidaten) + 2))):
+	if primzahl_kandidaten[primzahl]:
+		for j in range(i * 2, len(primzahl_kandidaten), i):
+			primzahl_kandidaten[j] = False
+	i += 1
+i = 0
+print(primzahl_kandidaten)
+for x in primzahl_kandidaten:
+	if x:
+		print(i)
+	i += 1
+
+stop = timeit.default_timer()
+print(primzahl_kandidaten.count(True))
+print('Time: ', stop - start)
+

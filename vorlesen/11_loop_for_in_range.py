@@ -26,9 +26,8 @@ for cd in range(10, -1, -1):
         print('Happy new year')
     else:
         print(cd)
+
 z = 0
-
-
 for x in range(101):
     if x % 5 == 0:
         z += 1
